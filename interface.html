@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cartographie Logiciels</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>Filtres par usage</h1>
+            <div id="listeTags"></div>
+        </aside>
+
+        <main class="main">
+            <div class="main-header">
+                <h2>Logiciels</h2>
+                <span><span id="compteurLogiciels">0</span> résultats</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Usages</th>
+                        <th>Licence</th>
+                        <th>Plateformes</th>
+                    </tr>
+                </thead>
+                <tbody id="listeLogiciels"></tbody>
+            </table>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

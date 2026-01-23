@@ -1,0 +1,1443 @@
+{
+    "tags": {
+        "Image 2D": ["2D", "Bitmap", "Vectoriel", "Image", "Photo"],
+        "Typographie": ["Typographie"],
+        "Audio": ["Son", "Musique", "MAO"],
+        "Vidéo": ["Vidéo", "Compositing", "Montage", "Diffusion", "Animation"],
+        "3D": ["3D", "Modélisation", "CAD", "Moteur de rendu", "Impression 3D"],
+        "Jeux": ["Jeux vidéo"],
+        "Interactif": ["Interaction", "Temps réel", "Generative", "Paramétrique"],
+        "Programmation": ["Programmation", "Automatisation", "Traitement de masse", "Electronique"],
+        "Texte & Publication": ["Texte", "Formatage", "Ecriture", "Publication", "PAO"],
+        "Design UI/UX": ["Mock-up", "UI", "UX"],
+        "Organisation": ["Diagrammes", "Organisation", "Schémas", "Collaboration"],
+        "IA": ["IA"]
+    },
+    "logiciels": [
+      {
+        "Nom": "Blender",
+        "Usages": [
+            "3D","Modélisation", "Compositing", "Animation", "Generative", "Paramétrique", "CAD", "Vidéo", "Moteur de rendu"
+        ],
+        "Description":"Logiciel de modélisation 3D. Permet de faire de l'animation, de la modélisation mécanique, des rendus, modélisation paramétrique... La grande force du logiciel réside dans sa communauté et la diversité des pratiques possibles et des addons qui viennent augmenter les possibilités.",
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://www.blender.org/"
+      },
+      {
+        "Nom": "Rhinocéros",
+        "Usages": [
+          "3D", "Modélisation", "CAD"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "995€",
+        "Typologie": "Logiciel local",
+        "url": "https://www.rhino3d.com/"
+      },
+      {
+        "Nom": "Pure Data",
+        "Usages": [
+            "Programmation", "Generative", "Son", "Musique", "Interaction", "Temps réel", "Automatisation", "Diffusion", "2D"
+        ],
+        "Interface": "graphique, nodale",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://puredata.info/"
+      },
+      {
+        "Nom": "Adobe Photoshop",
+        "Usages": [
+            "2D", "Bitmap", "Photo", "Image"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "26,21€/mois",
+        "Typologie": "Logiciel cloud",
+        "url": "https://www.adobe.com/products/photoshop.html"
+      },
+      {
+        "Nom": "ImageMagick",
+        "Usages": [
+            "2D", "Bitmap", "Image", "Photo", "Traitement de masse", "Automatisation", "Formatage"
+        ],
+        "Interface": "ligne de commande",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://imagemagick.org/"
+      },
+      {
+        "Nom": "Shotcut",
+        "Usages": [
+            "Vidéo", "Compositing"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://shotcut.org/"
+      },
+      {
+        "Nom": "Kdenlive",
+        "Usages": [
+            "Vidéo", "Compositing"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://kdenlive.org/"
+      },
+      {
+        "Nom": "Inkscape",
+        "Usages": [
+            "Vectoriel", "Image", "2D"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://inkscape.org/"
+      },
+      {
+        "Nom": "Ardour",
+        "Usages": [
+            "Son", "Musique", "MAO"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://ardour.org/"
+      },
+      {
+        "Nom": "Sublime Text",
+        "Usages": [
+            "Programmation", "Ecriture", "Automatisation", "Texte"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "99$",
+        "Typologie": "Logiciel local",
+        "url": "https://www.sublimetext.com/"
+      },
+      {
+        "Nom": "VSCodium",
+        "Usages": [
+            "Programmation", "Ecriture", "Automatisation", "Texte"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://vscodium.com/"
+      },
+      {
+        "Nom": "ffmpeg",
+        "Usages": [
+            "2D", "Bitmap", "Image", "Photo", "Traitement de masse", "Automatisation", "Formatage"
+        ],
+        "Interface": "ligne de commande",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://ffmpeg.org/"
+      },
+      {
+        "Nom": "Autocad",
+        "Usages": [
+            "CAD", "3D", "Modélisation"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "288€/mois",
+        "Typologie": "Logiciel local",
+        "url": "https://www.autodesk.com/products/autocad/"
+      },
+      {
+        "Nom": "Raw therapee",
+        "Usages": [
+            "2D", "Photo", "Image", "Bitmap"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://rawtherapee.com/"
+      },
+      {
+        "Nom": "Processing",
+        "Usages": [
+            "Programmation", "Interaction", "Temps réel", "Automatisation", "2D"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://processing.org/"
+      },
+      {
+        "Nom": "Arduino IDE",
+        "Usages": [
+          "Programmation", "Electronique", "Temps réel", "Interaction", "Automatisation"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://www.arduino.cc/en/software"
+      },
+      {
+        "Nom": "Thonny",
+        "Usages": [
+          "Programmation", "Electronique", "Temps réel", "Interaction", "Automatisation"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://thonny.org/"
+      },
+      {
+        "Nom": "Lmms",
+        "Usages": [
+            "Son", "Musique", "MAO"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://lmms.io/"
+      },
+      {
+        "Nom": "Mixxx",
+        "Usages": [
+          "Son", "Musique", "MAO"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://mixxx.org/"
+      },
+      {
+        "Nom": "Krita",
+        "Usages": [
+            "2D", "Bitmap", "Image", "Photo", "Animation"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://krita.org/"
+      },
+      {
+        "Nom": "Gimp",
+        "Usages": [
+            "2D", "Bitmap", "Image", "Photo"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://www.gimp.org/"
+      },
+      {
+        "Nom": "Natron",
+        "Usages": [
+            "Compositing", "2D", "Animation", "Vidéo"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://natrongithub.github.io/"
+      },
+      {
+        "Nom": "Canva",
+        "Usages": [
+            "Publication", "Ecriture", "PAO", "Mock-up", "UI", "UX"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": [
+          "gratuit limité",
+          "110€/ans pro",
+          "90€/ans/personne team"
+        ],
+        "Typologie": "Logiciel cloud",
+        "url": "https://www.canva.com/"
+      },
+      {
+        "Nom": "Penpot",
+        "Usages": [
+            "Publication", "Ecriture", "PAO", "Mock-up", "UI", "UX"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel cloud",
+        "url": "https://penpot.app/"
+      },
+      {
+        "Nom": "Figma",
+        "Usages": [
+          "Publication", "Ecriture", "PAO", "Mock-up", "UI", "UX"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": [
+          "3€,12€,16€ Pro",
+          "5€, 25€, 55€ Organization",
+          "5€, 35€, 90€ Enterprise"
+        ],
+        "Typologie": "Logiciel cloud",
+        "url": "https://www.figma.com/"
+      },
+      {
+        "Nom": "Adobe InDesign",
+        "Usages": [
+            "Publication", "Ecriture", "PAO", "Mock-up"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "26,21€/mois",
+        "Typologie": "Logiciel local",
+        "url": "https://www.adobe.com/products/indesign.html"
+      },
+      {
+        "Nom": "Pandoc",
+        "Usages": [
+            "Programmation", "Texte", "Formatage", "Automatisation", "Publication"
+        ],
+        "Interface": "ligne de commande",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Framework",
+        "url": "https://pandoc.org/"
+      },
+      {
+        "Nom": "WeasyPrint",
+        "Usages": [
+            "Programmation", "Texte", "Formatage", "Automatisation", "Publication"
+        ],
+        "Interface": "ligne de commande",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux",
+          "Web",
+          "python"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Librairie python",
+        "url": "https://weasyprint.org/"
+      },
+      {
+        "Nom": "PagedJS",
+        "Usages": [
+            "Programmation", "Texte", "Formatage", "Automatisation", "Publication"
+        ],
+        "Interface": "ligne de commande",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux",
+          "Web"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Librairie javascript",
+        "url": "https://pagedjs.org/"
+      },
+      {
+        "Nom": "Scribus",
+        "Usages": [
+            "Publication", "Ecriture", "PAO", "Mock-up"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://www.scribus.net/"
+      },
+      {
+        "Nom": "Fusion 360",
+        "Usages": [
+            "3D", "Modélisation", "Paramétrique", "CAD", "Moteur de rendu"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "96€/mois",
+        "Typologie": "Logiciel local",
+        "url": "https://www.autodesk.com/products/fusion-360/"
+      },
+      {
+        "Nom": "3DSMax",
+        "Usages": [
+            "3D", "Modélisation", "Paramétrique", "CAD", "Animation", "Moteur de rendu"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "282€/mois",
+        "Typologie": "Logiciel local",
+        "url": "https://www.autodesk.com/products/3ds-max/"
+      },
+      {
+        "Nom": "Maya",
+        "Usages": [
+            "3D", "Modélisation", "Paramétrique", "CAD", "Animation", "Moteur de rendu"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "282€/mois",
+        "Typologie": "Logiciel local",
+        "url": "https://www.autodesk.com/products/maya/"
+      },
+      {
+        "Nom": "FreeCad",
+        "Usages": [
+            "3D", "Modélisation", "Paramétrique", "CAD"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://www.freecad.org/"
+      },
+      {
+        "Nom": "Unity",
+        "Usages": [
+          "3D", "Modélisation", "Paramétrique", "Temps réel", "Interaction", "Jeux vidéo", "Moteur de rendu"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "gratuit personnel",
+        "Typologie": "Logiciel local",
+        "url": "https://unity.com/"
+      },
+      {
+        "Nom": "Unreal Engine",
+        "Usages": [
+          "3D", "Modélisation", "Paramétrique", "Temps réel", "Interaction", "Jeux vidéo", "Moteur de rendu"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "gratuit personnel",
+        "Typologie": "Logiciel local",
+        "url": "https://www.unrealengine.com/"
+      },
+      {
+        "Nom": "RPG Maker",
+        "Usages": [
+            "Jeux vidéo", "2D", "Moteur de rendu", "Interaction", "Ecriture"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Steam"
+        ],
+        "Prix licence": [
+          "92,24€ XP-MZ",
+          "77,99€ MZ",
+          "76,87€ MV",
+          "24,50€ XP"
+        ],
+        "Typologie": "Logiciel local",
+        "url": "https://www.rpgmakerWeb.com/"
+      },
+      {
+        "Nom": "Construct Animate",
+        "Usages": [
+          "Jeux vidéo", "2D", "Moteur de rendu", "Interaction", "Ecriture"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": [
+          "54,99€/ans personnal",
+          "198,99€/ans business",
+          "14,99€/ans education"
+        ],
+        "Typologie": "Logiciel local",
+        "url": "https://www.construct.net/en/animation-software"
+      },
+      {
+        "Nom": "Construct 3",
+        "Usages": [
+          "Jeux vidéo", "2D", "Moteur de rendu", "Interaction", "Ecriture"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": [
+          "119,99€/ans personnal",
+          "428,99€/ans business",
+          "32,99€/ans education"
+        ],
+        "Typologie": "Logiciel local",
+        "url": "https://www.construct.net/en/make-games/games-editor"
+      },
+      {
+        "Nom": "Twine",
+        "Usages": [
+          "Jeux vidéo", "2D", "Moteur de rendu", "Interaction", "Ecriture"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux",
+          "Web"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://twinery.org/"
+      },
+      {
+        "Nom": "Godot",
+        "Usages": [
+          "Jeux vidéo", "2D", "Moteur de rendu", "Interaction", "Ecriture", "Programmation", "3D"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://godotengine.org/"
+      },
+      {
+        "Nom": "Adobe Premier Pro",
+        "Usages": [
+          "Vidéo", "Compositing", "Montage"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "26,21€/mois",
+        "Typologie": "Logiciel cloud",
+        "url": "https://www.adobe.com/products/premiere.html"
+      },
+      {
+        "Nom": "DaVinci Resolve",
+        "Usages": [
+          "Vidéo", "Compositing", "Montage"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": ["gratuit limité", "studio : 295€"],
+        "Typologie": "Logiciel local",
+        "url": "https://www.blackmagicdesign.com/products/davinciresolve/"
+      },
+      {
+        "Nom": "Final cut pro",
+        "Usages": [
+          "Vidéo", "Compositing", "Montage"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "MacOS"
+        ],
+        "Prix licence": "349,99€",
+        "Typologie": "Logiciel local",
+        "url": "https://www.apple.com/final-cut-pro/"
+      },
+      {
+        "Nom": "Pro Tools",
+        "Usages": [
+          "Son", "Musique", "MAO"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": ["9€/mois", "34€/mois Stuio", "99€/mois Ultimate"],
+        "Typologie": "Logiciel local",
+        "url": "https://www.avid.com/pro-tools"
+      },
+      {
+        "Nom": "Dragonframe",
+        "Usages": [
+          "Animation", "Photo", "2D"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "340€",
+        "Typologie": "Logiciel local",
+        "url": "https://www.dragonframe.com/"
+      },
+      {
+        "Nom": "Point carre",
+        "Usages": [
+            "Bitmap", "2D", "Image"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "De 2000 à 12000€",
+        "Typologie": "Logiciel local",
+        "url": "https://www.pointcarre.com/fr/"
+      },
+      {
+        "Nom": "Affinity photo",
+        "Usages": [
+          "2D", "Bitmap", "Photo", "Image"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "74,99€",
+        "Typologie": "Logiciel local",
+        "url": "https://affinity.serif.com/fr/photo/"
+      },
+      {
+        "Nom": "Affinity publisher",
+        "Usages": [
+          "Publication", "Ecriture", "PAO", "Mock-up"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "74,99€",
+        "Typologie": "Logiciel local",
+        "url": "https://affinity.serif.com/fr/publisher/"
+      },
+      {
+        "Nom": "Affinity designer",
+        "Usages": [
+          "Vectoriel", "Image", "2D"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "74,99€",
+        "Typologie": "Logiciel local",
+        "url": "https://affinity.serif.com/fr/designer/"
+      },
+      {
+        "Nom": "Adobe Illustrator",
+        "Usages": [
+          "Vectoriel", "Image", "2D"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "26,21€/mois",
+        "Typologie": "Logiciel cloud",
+        "url": "https://www.adobe.com/products/illustrator.html"
+      },
+      {
+        "Nom": "Tiled",
+        "Usages": [
+          "Jeux vidéo", "2D", "Moteur de rendu", "3D"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://www.mapeditor.org/"
+      },
+      {
+        "Nom": "Max/MSP",
+        "Usages": [
+          "Programmation", "Generative", "Son", "Musique", "Interaction", "Temps réel", "Diffusion"
+        ],
+        "Interface": "graphique, nodale",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "399€",
+        "Typologie": "Logiciel local",
+        "url": "https://cycling74.com/"
+      },
+      {
+        "Nom": "Cables.gl",
+        "Usages": [
+          "Programmation", "Generative", "Son", "Musique", "Interaction", "Temps réel", "Vidéo", "Diffusion"
+        ],
+        "Interface": "graphique, nodale",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux",
+          "Web"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local ou Web",
+        "url": "https://cables.gl/"
+      },
+      {
+        "Nom": "TouchDesigner",
+        "Usages": [
+          "Programmation", "Generative", "Son", "Musique", "Interaction", "Temps réel", "Vidéo", "Diffusion"
+        ],
+        "Interface": "graphique, nodale",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": [
+          "Educ 300$",
+          "Commercial 600$",
+          "Pro 2200$"
+        ],
+        "Typologie": "Logiciel local",
+        "url": "https://derivative.ca/"
+      },
+      {
+        "Nom": "DarkTable",
+        "Usages": [
+            "2D", "Bitmap", "Photo", "Image"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://www.darktable.org/"
+      },
+      {
+        "Nom": "Eagle",
+        "Usages": [
+          "Electronique", "2D", "Vectoriel"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "85$/mois",
+        "Typologie": "Logiciel local",
+        "url": "https://www.autodesk.com/ca-fr/products/eagle/overview"
+      },
+      {
+        "Nom": "KiCad",
+        "Usages": [
+          "Electronique", "2D", "Vectoriel"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://kicad.org/"
+      },
+      {
+        "Nom": "Millumin",
+        "Usages": [
+          "Programmation", "Generative", "Son", "Musique", "Interaction", "Temps réel", "Vidéo", "Diffusion"
+        ],
+        "Interface": "graphique, timeline",
+        "Plateforme": [
+          "MacOS"
+        ],
+        "Prix licence": "399€",
+        "Typologie": "logiciel local",
+        "url": "https://www.millumin.com/"
+      },
+      {
+        "Nom": "Chataigne",
+        "Usages": [
+          "Programmation", "Generative", "Son", "Musique", "Interaction", "Temps réel", "Vidéo", "Diffusion"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "logiciel local",
+        "url": "https://benjamin.kuperberg.fr/chataigne/"
+      },
+      {
+        "Nom": "Ossia score",
+        "Usages": [
+          "Programmation", "Generative", "Son", "Musique", "Interaction", "Temps réel", "Diffusion"
+        ],
+        "Interface": "graphique, timeline",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "logiciel local",
+        "url": "https://ossia.io/"
+      },
+      {
+        "Nom": "Mad Mapper",
+        "Usages": [
+            "Interaction", "Temps réel", "Vidéo", "Diffusion"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "MacOS"
+        ],
+        "Prix licence": [
+          "44€/mois",
+          "459€/2 computers"
+        ],
+        "Typologie": "logiciel local",
+        "url": "https://madmapper.com/"
+      },
+      {
+        "Nom": "Module8",
+        "Usages": [
+          "Interaction", "Temps réel", "Vidéo", "Diffusion"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "MacOS"
+        ],
+        "Prix licence": "299€/2computers",
+        "Typologie": "logiciel local",
+        "url": "https://www.garagecube.com/modul8-v2/"
+      },
+      {
+        "Nom": "Resolume",
+        "Usages": [
+          "Interaction", "Temps réel", "Vidéo", "Diffusion"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": ["299€ Avenue", "799€ Arena"],
+        "Typologie": "logiciel local",
+        "url": "https://resolume.com/"
+      },
+      {
+        "Nom": "vvvv",
+        "Usages": [
+          "Generative", "Programmation", "Interaction", "Temps réel", "Vidéo", "Diffusion"
+        ],
+        "Interface": "graphique, nodale",
+        "Plateforme": [
+          "Windows"
+        ],
+        "Prix licence": "Education 270€, Permanant 500€",
+        "Typologie": "logiciel local",
+        "url": "https://visualprogramming.net/"
+      },
+      {
+        "Nom": "Orca slicer",
+        "Usages": [
+          "Impression 3D"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "logiciel local",
+        "url": "https://github.com/SoftFever/OrcaSlicer"
+      },
+      {
+        "Nom": "Ultimaker Cura",
+        "Usages": [
+          "Impression 3D"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "logiciel local",
+        "url": "https://ultimaker.com/software/ultimaker-cura/"
+      },
+      {
+        "Nom": "Prusa Slic3r",
+        "Usages": [
+          "Impression 3D"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "logiciel local",
+        "url": "https://github.com/prusa3d/PrusaSlicer"
+      },
+      {
+        "Nom": "Open Brodcast Studio",
+        "Usages": [
+          "Temps réel", "Vidéo", "Compositing", "Diffusion"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "logiciel local",
+        "url": "https://obsproject.com/"
+      },
+      {
+        "Nom": "Miro",
+        "Usages": [
+            "Diagrammes", "Organisation", "Schémas"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": [
+          "gratuit limité",
+          "8$/mois starter",
+          "16$/mois business"
+        ],
+        "Typologie": "cloud",
+        "url": "https://miro.com/"
+      },
+      {
+        "Nom": "Excalidraw",
+        "Usages": [
+            "2D", "Bitmap", "Vectoriel", "Image", "Collaboration"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux",
+          "Web"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "cloud",
+        "url": "https://excalidraw.com/"
+      },
+      {
+        "Nom": "Drawio",
+        "Usages": [
+          "2D", "Bitmap", "Vectoriel", "Image", "Collaboration", "Diagrammes", "Schémas"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "cloud, local, format .drawio",
+        "url": "https://www.drawio.com/"
+      },
+      {
+        "Nom": "Adobe After Effect",
+        "Usages": [
+            "Compositing", "Vidéo"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "26,21 € / mois",
+        "Typologie": "Logiciel local",
+        "url": "https://www.adobe.com/fr/products/aftereffects.html"
+      },
+      {
+        "Nom": "Gyroflow",
+        "Usages": [
+          "Vidéo"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://gyroflow.xyz/"
+      },
+      {
+        "Nom": "Stable Diffusion",
+        "Usages": [
+            "Image", "2D", "IA"
+        ],
+        "Interface": ["ligne de commande", "Web"],
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux",
+          "Web"
+        ],
+        "Prix licence": "Open source",
+        "Typologie": ["Logiciel local", "Web"],
+        "url": "https://stablediffusionWeb.com/fr"
+      },
+      {
+        "Nom": "Ollama",
+        "Usages": [
+          "Image", "2D", "IA", "Ecriture", "Traitement de masse"
+        ],
+        "Interface": "ligne de commande",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://ollama.com/"
+      },
+      {
+        "Nom": "Open WebUI",
+        "Usages": [
+            "IA", "UI", "Interaction"
+        ],
+        "Interface": ["ligne de commande", "Web"],
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux",
+          "Web"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://openWebui.com/"
+      },
+      {
+        "Nom": "FontForge",
+        "Usages": [
+          "Typographie", "Vectoriel", "Ecriture"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://fontforge.org/"
+      },
+      {
+        "Nom": "MeshLab",
+        "Usages": [
+          "3D", "Impression 3D", "Modélisation"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://www.meshlab.net/"
+      },
+      {
+        "Nom": "OpenSCAD",
+        "Usages": [
+          "3D", "Modélisation", "Programmation", "Generative", "Paramétrique"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://openscad.org/"
+      },
+      {
+        "Nom": "p5.js",
+        "Usages": [
+          "Programmation", "Generative", "Interaction", "Temps réel", "2D"
+        ],
+        "Interface": "Web",
+        "Plateforme": [
+        "Windows",
+        "MacOS",
+        "Linux",
+        "Web"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://p5js.org/"
+      },
+      {
+        "Nom": "Reaper",
+        "Usages": [
+          "Son", "Musique"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": [
+          "60$ discount",
+          "225$ commercial"
+        ],
+        "Typologie": "Logiciel local",
+        "url": "https://www.reaper.fm/"
+      },
+      {
+        "Nom": "VCV",
+        "Usages": [
+          "Temps réel", "Son", "Musique"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://vcvrack.com/"
+      },
+      {
+        "Nom": "SuperCollider",
+        "Usages": [
+          "Temps réel", "Son", "Musique"
+        ],
+        "Interface": [
+          "graphique",
+          "Programmation"
+        ],
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://supercollider.github.io/"
+      },
+      {
+        "Nom": "Orca",
+        "Usages": [
+          "Temps réel", "Son", "Musique", "Generative", "Programmation"
+        ],
+        "Interface": [
+        "ligne de commande","Programmation"
+        ],
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://100r.co/site/orca.html"
+      },
+      {
+        "Nom": "TidalCycles",
+        "Usages": [
+          "Temps réel", "Son", "Musique", "Generative", "Programmation"
+        ],
+        "Interface": [
+          "graphique",
+          "IDE",
+          "Programmation"
+        ],
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://tidalcycles.org/"
+      },
+      {
+        "Nom": "Sonic Pi",
+        "Usages": [
+          "Temps réel", "Son", "Musique", "Generative", "Programmation"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux",
+          "raspbian"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://sonic-pi.net/"
+      },
+      {
+        "Nom": "Audacity",
+        "Usages": [
+          "Son", "Musique"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://audacity.fr/"
+      },
+      {
+        "Nom": "OpenToonz",
+        "Usages": [
+          "Animation", "2D", "Image"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://opentoonz.github.io/"
+      },
+      {
+        "Nom": "Obsidian",
+        "Usages": [
+            "Ecriture", "Publication", "Diagrammes", "Organisation", "Collaboration", "Texte"
+        ],
+        "Interface": "texte",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux",
+          "smartphone"
+        ],
+        "Prix licence": [
+          "4$/mois sync",
+          "8$/mois publish"
+        ],
+        "Typologie": "Logiciel local",
+        "url": "https://obsidian.md/"
+      },
+      {
+        "Nom": "Notion",
+        "Usages": [
+          "Ecriture", "Publication", "Diagrammes", "Organisation", "Collaboration", "Texte"
+        ],
+        "Interface": "texte",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux",
+          "smartphone"
+        ],
+        "Prix licence": [
+          "gratuit limité",
+          "9,50€/mois Plus",
+          "19,50$/mois business"
+        ],
+        "Typologie": "Logiciel local",
+        "url": "https://www.notion.so/"
+      },
+      {
+        "Nom": "Overleaf",
+        "Usages": [
+          "Ecriture", "Publication", "Diagrammes", "Organisation", "Texte"
+        ],
+        "Interface": "Web",
+        "Plateforme": [
+          "Web"
+        ],
+        "Prix licence": "freemium",
+        "Typologie": "Logiciel local",
+        "url": "https://www.overleaf.com/"
+      },
+      {
+        "Nom": "FontBase",
+        "Usages": [
+          "Typographie", "Vectoriel", "Ecriture"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "freemium",
+        "Typologie": "Logiciel local",
+        "url": "https://fontba.se/"
+      }
+    ]
+  }
