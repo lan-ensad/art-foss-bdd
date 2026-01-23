@@ -11,7 +11,7 @@
         "Texte & Publication": ["Texte", "Formatage", "Ecriture", "Publication", "PAO"],
         "Design UI/UX": ["Mock-up", "UI", "UX"],
         "Organisation": ["Diagrammes", "Organisation", "Schémas", "Collaboration"],
-        "IA": ["IA"]
+        "IA": ["IA", "LLM"]
     },
     "logiciels": [
       {
