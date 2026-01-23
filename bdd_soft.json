@@ -1144,7 +1144,7 @@
           "Linux",
           "Web"
         ],
-        "Prix licence": "Open source",
+        "Prix licence": "Open Weight",
         "Typologie": ["Logiciel local", "Web"],
         "url": "https://stablediffusionWeb.com/fr"
       },
@@ -1159,9 +1159,39 @@
           "MacOS",
           "Linux"
         ],
-        "Prix licence": "libre",
+        "Prix licence": "Open source",
         "Typologie": "Logiciel local",
         "url": "https://ollama.com/"
+      },
+      {
+        "Nom": "Apertus",
+        "Usages": [
+          "IA", "Ecriture", "Traitement de masse", "Fine tunning"
+        ],
+        "Interface": "LLM",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://apertus.click/"
+      },
+      {
+        "Nom": "Olmo",
+        "Usages": [
+          "IA", "Ecriture", "Traitement de masse", "Fine tunning"
+        ],
+        "Interface": "LLM",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://allenai.org/"
       },
       {
         "Nom": "Open WebUI",
@@ -1178,6 +1208,21 @@
         "Prix licence": "libre",
         "Typologie": "Logiciel local",
         "url": "https://openWebui.com/"
+      },
+      {
+        "Nom": "Unsloth",
+        "Usages": [
+            "IA", "Interaction", "Fine tunning"
+        ],
+        "Interface": ["ligne de commande"],
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux",
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://unsloth.ai/"
       },
       {
         "Nom": "FontForge",

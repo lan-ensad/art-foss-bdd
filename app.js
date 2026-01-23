@@ -1,6 +1,6 @@
 let baseDeDonnees = { tags: {}, logiciels: [] };
 
-fetch('bdd_soft.json')
+fetch('https://raw.githubusercontent.com/lan-ensad/art-foss-bdd/refs/heads/main/bdd_soft.json')
     .then(response => response.json())
     .then(data => {
         baseDeDonnees = data;
@@ -46,7 +46,7 @@ function afficherBase() {
     const table = document.getElementById('listeLogiciels');
     const compteur = document.getElementById('compteurLogiciels');
     table.innerHTML = '';
-    const logiciels = baseDeDonnees.logiciels;
+    const logiciels = shuffle(baseDeDonnees.logiciels);
 
     logiciels.forEach(log => {
         const row = document.createElement('tr');
@@ -72,11 +72,11 @@ function appliquerFiltreTagsActifs() {
     const compteur = document.getElementById('compteurLogiciels');
     table.innerHTML = '';
 
-    const filtres = baseDeDonnees.logiciels.filter(log => {
+    const filtres = shuffle(baseDeDonnees.logiciels.filter(log => {
         return tagsActifs.length === 0 || (
             log.Usages && tagsActifs.every(tag => log.Usages.includes(tag))
         );
-    });
+    }));
 
     filtres.forEach(log => {
         const row = document.createElement('tr');
@@ -91,4 +91,13 @@ function appliquerFiltreTagsActifs() {
         table.appendChild(row);
     });
     compteur.textContent = filtres.length;
+}
+
+function shuffle(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
 }
