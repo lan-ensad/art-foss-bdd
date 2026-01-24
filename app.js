@@ -5,8 +5,8 @@ let filtreActifs = {
     usages: []
 };
 
-// fetch('https://raw.githubusercontent.com/lan-ensad/art-foss-bdd/refs/heads/main/bdd_soft.json')
-fetch('bdd_soft.json')
+fetch('https://raw.githubusercontent.com/lan-ensad/art-foss-bdd/refs/heads/main/bdd_soft.json')
+// fetch('bdd_soft.json') //Exp local
     .then(response => response.json())
     .then(data => {
         baseDeDonnees = data;
