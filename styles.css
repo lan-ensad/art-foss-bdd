@@ -31,6 +31,49 @@ body {
     border-bottom: 1px solid #eee;
 }
 
+.filtre-section {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.filtre-section:last-child {
+    border-bottom: none;
+}
+
+.filtre-section h3 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.filtre-licence,
+.filtre-plateformes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.filtre-btn {
+    padding: 4px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    transition: 0.15s;
+    font-size: 12px;
+}
+
+.filtre-btn:hover {
+    background-color: #e8e8e8;
+}
+
+.filtre-btn.actif {
+    background-color: #4a90d9;
+    color: white;
+    border-color: #3a7bc8;
+}
+
 .categorie { margin-bottom: 18px; }
 
 .categorie h4 {

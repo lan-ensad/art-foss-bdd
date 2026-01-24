@@ -8,8 +8,26 @@
 <body>
     <div class="container">
         <aside class="sidebar">
-            <h1>Filtres par usage</h1>
-            <div id="listeTags"></div>
+            <h1>Filtres</h1>
+
+            <div class="filtre-section">
+                <h3>Licence</h3>
+                <div class="filtre-licence">
+                    <button class="filtre-btn actif" data-licence="tout">Tout</button>
+                    <button class="filtre-btn" data-licence="libre">Libre</button>
+                    <button class="filtre-btn" data-licence="privateur">Privateur</button>
+                </div>
+            </div>
+
+            <div class="filtre-section">
+                <h3>Plateforme</h3>
+                <div id="filtrePlateformes" class="filtre-plateformes"></div>
+            </div>
+
+            <div class="filtre-section">
+                <h3>Usages</h3>
+                <div id="listeTags"></div>
+            </div>
         </aside>
 
         <main class="main">

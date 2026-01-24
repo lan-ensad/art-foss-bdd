@@ -11,7 +11,7 @@
         "Texte & Publication": ["Texte", "Formatage", "Ecriture", "Publication", "PAO"],
         "Design UI/UX": ["Mock-up", "UI", "UX"],
         "Organisation": ["Diagrammes", "Organisation", "Schémas", "Collaboration"],
-        "IA": ["IA", "LLM"]
+        "IA": ["IA", "LLM", "Fine tunning"]
     },
     "logiciels": [
       {
@@ -431,9 +431,7 @@
         "Plateforme": [
           "Windows",
           "MacOS",
-          "Linux",
-          "Web",
-          "python"
+          "Linux"
         ],
         "Prix licence": "libre",
         "Typologie": "Librairie python",
@@ -449,7 +447,7 @@
           "Windows",
           "MacOS",
           "Linux",
-          "Web"
+          "Navigateur"
         ],
         "Prix licence": "libre",
         "Typologie": "Librairie javascript",
@@ -565,8 +563,7 @@
         "Interface": "graphique",
         "Plateforme": [
           "Windows",
-          "MacOS",
-          "Steam"
+          "MacOS"
         ],
         "Prix licence": [
           "92,24€ XP-MZ",
@@ -625,7 +622,7 @@
           "Windows",
           "MacOS",
           "Linux",
-          "Web"
+          "Navigateur"
         ],
         "Prix licence": "libre",
         "Typologie": "Logiciel local",
@@ -826,10 +823,10 @@
           "Windows",
           "MacOS",
           "Linux",
-          "Web"
+          "Navigateur"
         ],
         "Prix licence": "libre",
-        "Typologie": "Logiciel local ou Web",
+        "Typologie": ["Logiciel local", "Navigateur"],
         "url": "https://cables.gl/"
       },
       {
@@ -1082,7 +1079,7 @@
           "Windows",
           "MacOS",
           "Linux",
-          "Web"
+          "Navigateur"
         ],
         "Prix licence": "libre",
         "Typologie": "cloud",
@@ -1137,15 +1134,15 @@
         "Usages": [
             "Image", "2D", "IA"
         ],
-        "Interface": ["ligne de commande", "Web"],
+        "Interface": ["ligne de commande", "Navigateur"],
         "Plateforme": [
           "Windows",
           "MacOS",
           "Linux",
-          "Web"
+          "Navigateur"
         ],
-        "Prix licence": "Open Weight",
-        "Typologie": ["Logiciel local", "Web"],
+        "Prix licence": "Open source",
+        "Typologie": ["Logiciel local", "Navigateur"],
         "url": "https://stablediffusionWeb.com/fr"
       },
       {
@@ -1166,9 +1163,9 @@
       {
         "Nom": "Apertus",
         "Usages": [
-          "IA", "Ecriture", "Traitement de masse", "Fine tunning"
+          "IA", "Ecriture", "Traitement de masse", "Fine tunning", "LLM", "Fine tunning"
         ],
-        "Interface": "LLM",
+        "Interface": "ligne de commande",
         "Plateforme": [
           "Windows",
           "MacOS",
@@ -1181,9 +1178,9 @@
       {
         "Nom": "Olmo",
         "Usages": [
-          "IA", "Ecriture", "Traitement de masse", "Fine tunning"
+          "IA", "Ecriture", "Traitement de masse", "Fine tunning", "LLM", "Fine tunning"
         ],
-        "Interface": "LLM",
+        "Interface": "ligne de commande",
         "Plateforme": [
           "Windows",
           "MacOS",
@@ -1198,16 +1195,32 @@
         "Usages": [
             "IA", "UI", "Interaction"
         ],
-        "Interface": ["ligne de commande", "Web"],
+        "Interface": ["ligne de commande", "Navigateur"],
         "Plateforme": [
           "Windows",
           "MacOS",
           "Linux",
-          "Web"
+          "Navigateur"
         ],
         "Prix licence": "libre",
         "Typologie": "Logiciel local",
         "url": "https://openWebui.com/"
+      },
+      {
+        "Nom": "ComfyUI",
+        "Usages": [
+            "IA", "UI", "Interaction", "Automatisation"
+        ],
+        "Interface": ["ligne de commande", "Navigateur"],
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux",
+          "Navigateur"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://comfyui.org/en/what-is-comfyui"
       },
       {
         "Nom": "Unsloth",
@@ -1274,12 +1287,12 @@
         "Usages": [
           "Programmation", "Generative", "Interaction", "Temps réel", "2D"
         ],
-        "Interface": "Web",
+        "Interface": "Navigateur",
         "Plateforme": [
         "Windows",
         "MacOS",
         "Linux",
-        "Web"
+        "Navigateur"
         ],
         "Prix licence": "libre",
         "Typologie": "Logiciel local",
@@ -1381,8 +1394,7 @@
         "Plateforme": [
           "Windows",
           "MacOS",
-          "Linux",
-          "raspbian"
+          "Linux"
         ],
         "Prix licence": "libre",
         "Typologie": "Logiciel local",
@@ -1426,8 +1438,7 @@
         "Plateforme": [
           "Windows",
           "MacOS",
-          "Linux",
-          "smartphone"
+          "Linux"
         ],
         "Prix licence": [
           "4$/mois sync",
@@ -1445,8 +1456,7 @@
         "Plateforme": [
           "Windows",
           "MacOS",
-          "Linux",
-          "smartphone"
+          "Linux"
         ],
         "Prix licence": [
           "gratuit limité",
@@ -1461,9 +1471,9 @@
         "Usages": [
           "Ecriture", "Publication", "Diagrammes", "Organisation", "Texte"
         ],
-        "Interface": "Web",
+        "Interface": "Navigateur",
         "Plateforme": [
-          "Web"
+          "Navigateur"
         ],
         "Prix licence": "freemium",
         "Typologie": "Logiciel local",
