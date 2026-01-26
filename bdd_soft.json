@@ -848,6 +848,21 @@
         "url": "https://derivative.ca/"
       },
       {
+        "Nom": "Coollab",
+        "Usages": [
+          "Programmation", "Generative", "Son", "Musique", "Interaction", "Temps réel", "Vidéo", "Diffusion"
+        ],
+        "Interface": "graphique, nodale",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://coollab-art.com/"
+      },
+      {
         "Nom": "DarkTable",
         "Usages": [
             "2D", "Bitmap", "Photo", "Image"
