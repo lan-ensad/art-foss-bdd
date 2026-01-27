@@ -4,7 +4,7 @@
         "Typographie": ["Typographie"],
         "Audio": ["Son", "Musique", "MAO"],
         "Vidéo": ["Vidéo", "Compositing", "Montage", "Diffusion", "Animation"],
-        "3D": ["3D", "Modélisation", "CAD", "Moteur de rendu", "Impression 3D"],
+        "3D": ["3D", "Modélisation", "CAD", "Moteur de rendu", "Impression 3D", "Photogramétrie"],
         "Jeux": ["Jeux vidéo"],
         "Interactif": ["Interaction", "Temps réel", "Generative", "Paramétrique"],
         "Programmation": ["Programmation", "Automatisation", "Traitement de masse", "Electronique"],
@@ -29,6 +29,39 @@
         "Prix licence": "libre",
         "Typologie": "Logiciel local",
         "url": "https://www.blender.org/"
+      },
+      {
+        "Nom": "Metashape",
+        "Usages": [
+            "3D","Modélisation", "Photogramétrie"
+        ],
+        "Description":"",
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": ["Standard 107$", "Professional 3499$"],
+        "Typologie": "Logiciel local",
+        "url": "https://www.agisoft.com/"
+      },
+      {
+        "Nom": "WebODM",
+        "Usages": [
+            "3D","Modélisation", "Photogramétrie", "drone"
+        ],
+        "Description":"",
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux",
+          "Navigateur"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://opendronemap.org/webodm/"
       },
       {
         "Nom": "Rhinocéros",
@@ -1270,7 +1303,7 @@
       {
         "Nom": "MeshLab",
         "Usages": [
-          "3D", "Impression 3D", "Modélisation"
+          "3D", "Impression 3D", "Modélisation", "Photogramétrie"
         ],
         "Interface": "graphique",
         "Plateforme": [
