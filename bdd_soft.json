@@ -1303,7 +1303,7 @@
       {
         "Nom": "MeshLab",
         "Usages": [
-          "3D", "Impression 3D", "Modélisation", "Photogramétrie"
+          "3D", "Modélisation", "Photogramétrie"
         ],
         "Interface": "graphique",
         "Plateforme": [
