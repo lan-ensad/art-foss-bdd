@@ -762,36 +762,10 @@
         "url": "https://www.pointcarre.com/fr/"
       },
       {
-        "Nom": "Affinity photo",
+        "Nom": "Affinity by Canva",
         "Usages": [
-          "2D", "Bitmap", "Photo", "Image"
-        ],
-        "Interface": "graphique",
-        "Plateforme": [
-          "Windows",
-          "MacOS"
-        ],
-        "Prix licence": "freemium",
-        "Typologie": "Logiciel local",
-        "url": "https://affinity.serif.com/fr/photo/"
-      },
-      {
-        "Nom": "Affinity publisher",
-        "Usages": [
-          "Publication", "Ecriture", "PAO", "Mock-up"
-        ],
-        "Interface": "graphique",
-        "Plateforme": [
-          "Windows",
-          "MacOS"
-        ],
-        "Prix licence": "freemium",
-        "Typologie": "Logiciel local",
-        "url": "https://affinity.serif.com/fr/publisher/"
-      },
-      {
-        "Nom": "Affinity designer",
-        "Usages": [
+          "2D", "Bitmap", "Photo", "Image", 
+          "Publication", "Ecriture", "PAO", "Mock-up",
           "Vectoriel", "Image", "2D"
         ],
         "Interface": "graphique",
@@ -799,9 +773,9 @@
           "Windows",
           "MacOS"
         ],
-        "Prix licence": "freemium",
+        "Prix licence": ["inscription requise","gratuit limité", "pro 110€/an", "pro+ 160€/an"],
         "Typologie": "Logiciel local",
-        "url": "https://affinity.serif.com/fr/designer/"
+        "url": "https://www.affinity.studio/fr_fr"
       },
       {
         "Nom": "Adobe Illustrator",
