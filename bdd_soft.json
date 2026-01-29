@@ -152,6 +152,25 @@
         "url": "https://kdenlive.org/"
       },
       {
+        "Nom": "CorelDRAW",
+        "Usages": [
+            "Vectoriel", "Image", "2D", "Bitmap", "PAO", "Typographie", "Publication"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS", 
+          "Navigateur"
+        ],
+        "Prix licence": [
+          "Go : 115€/an",
+          "Standard : 355€/an",
+          "Graphics Suite : 369€/an"
+        ],
+        "Typologie": "Logiciel local",
+        "url": "https://www.coreldraw.com/"
+      },
+      {
         "Nom": "Inkscape",
         "Usages": [
             "Vectoriel", "Image", "2D"
