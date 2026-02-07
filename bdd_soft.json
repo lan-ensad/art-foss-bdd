@@ -1578,7 +1578,7 @@
           "Linux"
         ],
         "Prix licence": "libre",
-        "Typologie": "Générateur de site statique (SSG) compatible avec les formateges (templating) JS",
+        "Typologie": "Générateur de site statique (SSG) basé sur l'architecture JAMStack. Compatible avec les formateges (templating) Vue.js",
         "url": "https://gridsome.org/"
       }
     ]
