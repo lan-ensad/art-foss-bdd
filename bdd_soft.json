@@ -8,7 +8,7 @@
         "Jeux": ["Jeux vidéo"],
         "Interactif": ["Interaction", "Temps réel", "Generative", "Paramétrique"],
         "Programmation": ["Programmation", "Automatisation", "Traitement de masse", "Electronique"],
-        "Texte & Publication": ["Texte", "Formatage", "Ecriture", "Publication", "PAO"],
+        "Texte & Publication": ["Texte", "Formatage", "Ecriture", "Publication", "PAO", "Web"],
         "Design UI/UX": ["Mock-up", "UI", "UX"],
         "Organisation": ["Diagrammes", "Organisation", "Schémas", "Collaboration"],
         "IA": ["IA", "LLM", "Fine tunning"]
@@ -1535,6 +1535,51 @@
         "Prix licence": "freemium",
         "Typologie": "Logiciel local",
         "url": "https://fontba.se/"
+      },
+        {
+        "Nom": "Hugo",
+        "Usages": [
+            "Web", "Formatage", "Automatisation", "Publication"
+        ],
+        "Interface": "ligne de commande",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Générateur de site statique (SSG) écrit en Go",
+        "url": "https://gohugo.io/"
+        },
+        {
+        "Nom": "Jekyll",
+        "Usages": [
+            "Web", "Formatage", "Automatisation", "Publication"
+        ],
+        "Interface": "ligne de commande",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Générateur de site statique (SSG)",
+        "url": "https://jekyllrb.com/"
+        },
+        {
+        "Nom": "Gridsome",
+        "Usages": [
+            "Web", "Formatage", "Automatisation", "Publication"
+        ],
+        "Interface": "ligne de commande",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Générateur de site statique (SSG) basé sur l'architecture JAMStack. Compatible avec les formateges (templating) Vue.js",
+        "url": "https://gridsome.org/"
       }
     ]
   }
