@@ -550,6 +550,34 @@
         "url": "https://www.autodesk.com/products/3ds-max/"
       },
       {
+        "Nom": "ZBrush",
+        "Usages": [
+            "3D", "Modélisation", "Sculpt"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "54€/mois",
+        "Typologie": "Logiciel local",
+        "url": "https://www.maxon.net/en/zbrush"
+      },
+      {
+        "Nom": "Cinema 4D",
+        "Usages": [
+            "3D", "Modélisation", "Sculpt", "Animation"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "118.80€/mois",
+        "Typologie": "Logiciel local",
+        "url": "https://www.maxon.net/en/zbrush"
+      },
+      {
         "Nom": "Maya",
         "Usages": [
             "3D", "Modélisation", "Paramétrique", "CAD", "Animation", "Moteur de rendu"
@@ -1578,8 +1606,23 @@
           "Linux"
         ],
         "Prix licence": "libre",
-        "Typologie": "Générateur de site statique (SSG) basé sur l'architecture JAMStack. Compatible avec les formateges (templating) Vue.js",
+        "Typologie": "Générateur de site statique (SSG) basé sur l'architecture JAMStack. Compatible avec les formatages (templating) Vue.js",
         "url": "https://gridsome.org/"
-      }
+      },
+      {
+        "Nom": "Astro",
+        "Usages": [
+            "Web", "Formatage", "Automatisation", "Publication"
+        ],
+        "Interface": "ligne de commande",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Framework for content-driven websites",
+        "url": "https://astro.build/"
+        }
     ]
   }
