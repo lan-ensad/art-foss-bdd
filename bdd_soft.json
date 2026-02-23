@@ -1550,6 +1550,19 @@
         "url": "https://www.overleaf.com/"
       },
       {
+        "Nom": "Glyph",
+        "Usages": [
+          "Typographie", "Vectoriel", "Ecriture"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "MacOS"
+        ],
+        "Prix licence": ["Glyphs 3 : 299€", "Glyphs mini 2 : 49€"],
+        "Typologie": "Logiciel local",
+        "url": "https://glyphsapp.com//"
+      },
+      {
         "Nom": "FontBase",
         "Usages": [
           "Typographie", "Vectoriel", "Ecriture"
