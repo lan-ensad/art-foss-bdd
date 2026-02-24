@@ -31,6 +31,22 @@
         "url": "https://www.blender.org/"
       },
       {
+        "Nom": "Houdini",
+        "Usages": [
+            "3D","Modélisation", "Compositing", "Animation", "Generative", "Paramétrique", "Vidéo"
+        ],
+        "Description":"",
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": ["Education : 75$/an", "Indie : 299$/an", "Commerial core : 1415$/an", "Commerial FX: 3369$/an"],
+        "Typologie": "Logiciel local",
+        "url": "https://www.sidefx.com/"
+      },
+      {
         "Nom": "Metashape",
         "Usages": [
             "3D","Modélisation", "Photogramétrie"
