@@ -5,9 +5,7 @@ let activeFilters = {
     usages: []
 };
 
-// fetch('https://raw.githubusercontent.com/lan-ensad/art-foss-bdd/refs/heads/main/bdd_soft.json')
-fetch('bdd_soft.json') // Local dev
-    .then(response => response.json())
+loadData()
     .then(data => {
         database = data;
         renderFilters();

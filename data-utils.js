@@ -42,7 +42,8 @@ function isFreeLicence(licencePrice) {
 }
 
 function loadData() {
-    return fetch('bdd_soft.json')
+    return fetch('https://raw.githubusercontent.com/lan-ensad/art-foss-bdd/refs/heads/main/bdd_soft.json')
+    // return fetch('bdd_soft.json') // Local dev
         .then(response => response.json());
 }
 
