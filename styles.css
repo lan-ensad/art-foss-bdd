@@ -1,25 +1,150 @@
 * { box-sizing: border-box; }
 
+/* ============================================================
+   Theme variables
+   ============================================================ */
+
+:root {
+    --bg-body: #f5f5f5;
+    --bg-sidebar: #ffffff;
+    --bg-card: #ffffff;
+    --bg-input: #f8f8f8;
+    --bg-input-hover: #e8e8e8;
+    --bg-nav: #333333;
+    --bg-th: #333333;
+    --bg-row-hover: #f9f9f9;
+    --bg-tag: #e8e8e8;
+    --bg-graph: #e8e8ee;
+
+    --text-primary: #333333;
+    --text-secondary: #555555;
+    --text-muted: #666666;
+    --text-faint: #888888;
+    --text-nav: #aaaaaa;
+    --text-nav-active: #333333;
+    --text-link: #2563eb;
+    --text-label-graph: #444444;
+
+    --border: #dddddd;
+    --border-light: #eeeeee;
+
+    --accent: #4a90d9;
+    --accent-dark: #3a7bc8;
+
+    --shadow: rgba(0, 0, 0, 0.1);
+    --shadow-strong: rgba(0, 0, 0, 0.15);
+
+    --graph-link: #999999;
+    --graph-link-highlight: #4a90d9;
+    --graph-stroke-privateur: #888888;
+}
+
+[data-theme="dark"] {
+    --bg-body: #1a1a2e;
+    --bg-sidebar: #22223a;
+    --bg-card: #2a2a44;
+    --bg-input: #2a2a44;
+    --bg-input-hover: #35355a;
+    --bg-nav: #16162b;
+    --bg-th: #16162b;
+    --bg-row-hover: #2e2e4a;
+    --bg-tag: #35355a;
+    --bg-graph: #1a1a2e;
+
+    --text-primary: #e0e0e0;
+    --text-secondary: #bbbbbb;
+    --text-muted: #999999;
+    --text-faint: #777777;
+    --text-nav: #777777;
+    --text-nav-active: #e0e0e0;
+    --text-link: #6eaaff;
+    --text-label-graph: #cccccc;
+
+    --border: #3a3a55;
+    --border-light: #2e2e4a;
+
+    --accent: #4a90d9;
+    --accent-dark: #3a7bc8;
+
+    --shadow: rgba(0, 0, 0, 0.3);
+    --shadow-strong: rgba(0, 0, 0, 0.4);
+
+    --graph-link: #555555;
+    --graph-link-highlight: #4a90d9;
+    --graph-stroke-privateur: #555555;
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
+
 body {
     font-family: system-ui, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f5f5f5;
+    background: var(--bg-body);
+    color: var(--text-primary);
     height: 100vh;
     overflow: hidden;
 }
 
-.container {
+/* Navigation */
+.nav-principale {
     display: flex;
-    height: 100vh;
+    gap: 0;
+    background: var(--bg-nav);
+    padding: 0 20px;
+    height: 40px;
+    align-items: center;
 }
 
-/* Panneau gauche - Filtres */
+.nav-lien {
+    color: var(--text-nav);
+    text-decoration: none;
+    font-size: 13px;
+    padding: 8px 16px;
+    border-radius: 3px 3px 0 0;
+    transition: 0.15s;
+}
+
+.nav-lien:hover { color: #fff; }
+
+.nav-lien.actif {
+    background: var(--bg-body);
+    color: var(--text-nav-active);
+    font-weight: 600;
+}
+
+.nav-spacer { flex: 1; }
+
+.theme-toggle {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 3px;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px 10px;
+    transition: 0.15s;
+    line-height: 1;
+}
+
+.theme-toggle:hover {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 40px);
+}
+
+/* Left panel - Filters */
 .sidebar {
     width: 280px;
     min-width: 280px;
-    background: white;
-    border-right: 1px solid #ddd;
+    background: var(--bg-sidebar);
+    border-right: 1px solid var(--border);
     padding: 20px;
     overflow-y: auto;
 }
@@ -28,13 +153,13 @@ body {
     font-size: 18px;
     margin: 0 0 20px 0;
     padding-bottom: 15px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border-light);
 }
 
 .filtre-section {
     margin-bottom: 20px;
     padding-bottom: 15px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border-light);
 }
 
 .filtre-section:last-child {
@@ -44,7 +169,7 @@ body {
 .filtre-section h3 {
     margin: 0 0 10px 0;
     font-size: 14px;
-    color: #333;
+    color: var(--text-primary);
 }
 
 .filtre-licence,
@@ -56,29 +181,30 @@ body {
 
 .filtre-btn {
     padding: 4px 10px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border);
     border-radius: 3px;
     cursor: pointer;
-    background-color: #f8f8f8;
+    background-color: var(--bg-input);
+    color: var(--text-primary);
     transition: 0.15s;
     font-size: 12px;
 }
 
 .filtre-btn:hover {
-    background-color: #e8e8e8;
+    background-color: var(--bg-input-hover);
 }
 
 .filtre-btn.actif {
-    background-color: #4a90d9;
+    background-color: var(--accent);
     color: white;
-    border-color: #3a7bc8;
+    border-color: var(--accent-dark);
 }
 
 .categorie { margin-bottom: 18px; }
 
 .categorie h4 {
     margin: 0 0 8px 0;
-    color: #555;
+    color: var(--text-secondary);
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -89,23 +215,24 @@ body {
 #listeTags button {
     margin: 0;
     padding: 4px 10px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border);
     border-radius: 3px;
     cursor: pointer;
-    background-color: #f8f8f8;
+    background-color: var(--bg-input);
+    color: var(--text-primary);
     transition: 0.15s;
     font-size: 12px;
 }
 
-#listeTags button:hover { background-color: #e8e8e8; }
+#listeTags button:hover { background-color: var(--bg-input-hover); }
 
 #listeTags button.actif {
-    background-color: #4a90d9;
+    background-color: var(--accent);
     color: white;
-    border-color: #3a7bc8;
+    border-color: var(--accent-dark);
 }
 
-/* Panneau droit - Logiciels */
+/* Right panel - Software list */
 .main {
     flex: 1;
     padding: 20px;
@@ -124,19 +251,19 @@ body {
     font-size: 20px;
 }
 
-#compteurLogiciels { font-weight: normal; color: #666; }
+#compteurLogiciels { font-weight: normal; color: var(--text-muted); }
 
 table {
     width: 100%;
-    background: white;
+    background: var(--bg-card);
     border-collapse: collapse;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px var(--shadow);
 }
 
 th {
-    background: #333;
+    background: var(--bg-th);
     color: white;
     text-align: left;
     padding: 12px;
@@ -145,18 +272,18 @@ th {
 
 td {
     padding: 10px 12px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border-light);
     font-size: 14px;
 }
 
-tr:hover { background: #f9f9f9; }
+tr:hover { background: var(--bg-row-hover); }
 
 td a {
-    color: #2563eb;
+    color: var(--text-link);
     text-decoration: none;
     font-weight: 500;
 }
 
 td a:hover { text-decoration: underline; }
 
-.usages-cell { font-size: 11px; color: #666; }
+.usages-cell { font-size: 11px; color: var(--text-muted); }

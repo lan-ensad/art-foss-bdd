@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Software Cartography - Network</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cartographie.css">
+</head>
+<body>
+    <nav class="nav-principale">
+        <a href="index.html" class="nav-lien">Table</a>
+        <a href="cartographie.html" class="nav-lien actif">Cartography</a>
+        <span class="nav-spacer"></span>
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme"></button>
+    </nav>
+
+    <div class="carto-container">
+        <aside class="carto-sidebar">
+            <h2>Visualization</h2>
+
+            <div class="filtre-section">
+                <h3>Mode</h3>
+                <div class="mode-buttons">
+                    <button class="mode-btn actif" data-mode="affinity">Affinity</button>
+                    <button class="mode-btn" data-mode="bipartite">Bipartite</button>
+                    <button class="mode-btn" data-mode="clusters">Clusters</button>
+                    <button class="mode-btn" data-mode="cooccurrence">Co-occurrence</button>
+                </div>
+            </div>
+
+            <div class="filtre-section" id="sectionSeuil">
+                <h3>Affinity threshold</h3>
+                <div class="seuil-control">
+                    <input type="range" id="seuilRange" min="1" max="8" value="2">
+                    <span id="seuilValeur">2</span>
+                </div>
+            </div>
+
+            <div class="filtre-section">
+                <h3>Licence</h3>
+                <div class="filtre-licence">
+                    <button class="filtre-btn actif" data-licence="tout">All</button>
+                    <button class="filtre-btn" data-licence="libre">Free</button>
+                    <button class="filtre-btn" data-licence="privateur">Proprietary</button>
+                </div>
+            </div>
+
+            <div class="filtre-section">
+                <h3>Platform</h3>
+                <div id="filtrePlateformes" class="filtre-plateformes"></div>
+            </div>
+
+            <div class="filtre-section">
+                <h3>Search</h3>
+                <input type="text" id="recherche" placeholder="Software name...">
+            </div>
+
+            <div class="carto-actions">
+                <button id="btnFit">Recenter</button>
+                <button id="btnExport">Export PNG</button>
+            </div>
+
+            <div id="legende" class="legende"></div>
+
+        </aside>
+
+        <main class="carto-main">
+            <svg id="graphSvg"></svg>
+            <div id="tooltip" class="tooltip hidden"></div>
+            <div id="infoPanel" class="info-panel hidden"></div>
+        </main>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="data-utils.js"></script>
+    <script src="cartographie.js"></script>
+</body>
+</html>

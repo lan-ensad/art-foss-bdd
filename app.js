@@ -1,78 +1,69 @@
-let baseDeDonnees = { tags: {}, logiciels: [] };
-let filtreActifs = {
+let database = { tags: {}, logiciels: [] };
+let activeFilters = {
     licence: 'tout',
-    plateformes: [],
+    platforms: [],
     usages: []
 };
 
-fetch('https://raw.githubusercontent.com/lan-ensad/art-foss-bdd/refs/heads/main/bdd_soft.json')
-// fetch('bdd_soft.json') //Exp local
+// fetch('https://raw.githubusercontent.com/lan-ensad/art-foss-bdd/refs/heads/main/bdd_soft.json')
+fetch('bdd_soft.json') // Local dev
     .then(response => response.json())
     .then(data => {
-        baseDeDonnees = data;
-        renderFiltres();
-        afficherBase();
+        database = data;
+        renderFilters();
+        displayAll();
     })
     .catch(error => {
-        console.error("Erreur de chargement :", error);
+        console.error("Loading error:", error);
     });
 
-function estLicenceLibre(prixLicence) {
-    if (Array.isArray(prixLicence)) {
-        return prixLicence.some(p =>
-            p.toLowerCase().includes('libre') ||
-            p.toLowerCase().includes('open source')
-        );
-    }
-    const prix = (prixLicence || '').toLowerCase();
-    return prix.includes('libre') || prix.includes('open source');
-}
+// isFreeLicence() is in data-utils.js
 
-function renderFiltres() {
-    renderFiltreLicence();
-    renderFiltrePlateformes();
+function renderFilters() {
+    renderLicenceFilter();
+    renderPlatformFilter();
     renderTags();
 }
 
-function renderFiltreLicence() {
-    const boutons = document.querySelectorAll('.filtre-licence .filtre-btn');
-    boutons.forEach(btn => {
+function renderLicenceFilter() {
+    const buttons = document.querySelectorAll('.filtre-licence .filtre-btn');
+    buttons.forEach(btn => {
         btn.onclick = () => {
-            boutons.forEach(b => b.classList.remove('actif'));
+            buttons.forEach(b => b.classList.remove('actif'));
             btn.classList.add('actif');
-            filtreActifs.licence = btn.dataset.licence;
-            appliquerTousFiltres();
+            activeFilters.licence = btn.dataset.licence;
+            applyAllFilters();
         };
     });
 }
 
-function renderFiltrePlateformes() {
+function renderPlatformFilter() {
     const container = document.getElementById('filtrePlateformes');
     container.innerHTML = '';
 
-    const plateformesUniques = new Set();
-    baseDeDonnees.logiciels.forEach(log => {
-        (log.Plateforme || []).forEach(p => plateformesUniques.add(p));
+    const uniquePlatforms = new Set();
+    database.logiciels.forEach(log => {
+        (log.Plateforme || []).forEach(p => uniquePlatforms.add(p));
     });
 
-    const plateformesOrdonnees = ['Windows', 'MacOS', 'Linux', 'Web'];
-    const autresPlateformes = [...plateformesUniques]
-        .filter(p => !plateformesOrdonnees.includes(p))
+    const orderedPlatforms = ['Windows', 'MacOS', 'Linux', 'Web'];
+    const otherPlatforms = [...uniquePlatforms]
+        .filter(p => !orderedPlatforms.includes(p))
         .sort();
 
-    [...plateformesOrdonnees.filter(p => plateformesUniques.has(p)), ...autresPlateformes].forEach(plateforme => {
+    [...orderedPlatforms.filter(p => uniquePlatforms.has(p)), ...otherPlatforms].forEach(platform => {
         const btn = document.createElement('button');
-        btn.textContent = plateforme;
+        btn.textContent = platform;
         btn.className = 'filtre-btn';
-        btn.dataset.plateforme = plateforme;
+        btn.dataset.plateforme = platform;
         btn.onclick = () => {
             btn.classList.toggle('actif');
             if (btn.classList.contains('actif')) {
-                filtreActifs.plateformes.push(plateforme);
+                activeFilters.platforms.push(platform);
             } else {
-                filtreActifs.plateformes = filtreActifs.plateformes.filter(p => p !== plateforme);
+                activeFilters.platforms = activeFilters.platforms.filter(p => p !== platform);
             }
-            appliquerTousFiltres();
+            applyAllFilters();
         };
         container.appendChild(btn);
     });
@@ -82,12 +73,12 @@ function renderTags() {
     const container = document.getElementById('listeTags');
     container.innerHTML = '';
 
-    for (const [categorie, tags] of Object.entries(baseDeDonnees.tags)) {
+    for (const [category, tags] of Object.entries(database.tags)) {
         const div = document.createElement('div');
         div.className = 'categorie';
 
         const h4 = document.createElement('h4');
-        h4.textContent = categorie;
+        h4.textContent = category;
         div.appendChild(h4);
 
         const tagsDiv = document.createElement('div');
@@ -100,11 +91,11 @@ function renderTags() {
             btn.onclick = () => {
                 btn.classList.toggle('actif');
                 if (btn.classList.contains('actif')) {
-                    filtreActifs.usages.push(tag);
+                    activeFilters.usages.push(tag);
                 } else {
-                    filtreActifs.usages = filtreActifs.usages.filter(t => t !== tag);
+                    activeFilters.usages = activeFilters.usages.filter(t => t !== tag);
                 }
-                appliquerTousFiltres();
+                applyAllFilters();
             };
             tagsDiv.appendChild(btn);
         });
@@ -114,51 +105,51 @@ function renderTags() {
     }
 }
 
-function afficherBase() {
+function displayAll() {
     const table = document.getElementById('listeLogiciels');
-    const compteur = document.getElementById('compteurLogiciels');
+    const counter = document.getElementById('compteurLogiciels');
     table.innerHTML = '';
-    const logiciels = shuffle(baseDeDonnees.logiciels);
+    const software = shuffle(database.logiciels);
 
-    logiciels.forEach(log => {
+    software.forEach(log => {
         const row = document.createElement('tr');
-        const prix = Array.isArray(log["Prix licence"]) ? log["Prix licence"].join(', ') : log["Prix licence"];
-        const plateformes = log.Plateforme.join(', ');
+        const price = Array.isArray(log["Prix licence"]) ? log["Prix licence"].join(', ') : log["Prix licence"];
+        const platforms = log.Plateforme.join(', ');
         row.innerHTML = `
             <td><a href="${log.url}" target="_blank">${log.Nom}</a></td>
             <td class="usages-cell">${(log.Usages || []).join(", ")}</td>
-            <td>${prix || "Inconnu"}</td>
-            <td>${plateformes}</td>
+            <td>${price || "Unknown"}</td>
+            <td>${platforms}</td>
         `;
         table.appendChild(row);
     });
 
-    compteur.textContent = logiciels.length;
+    counter.textContent = software.length;
 }
 
-function appliquerTousFiltres() {
+function applyAllFilters() {
     const table = document.getElementById('listeLogiciels');
-    const compteur = document.getElementById('compteurLogiciels');
+    const counter = document.getElementById('compteurLogiciels');
     table.innerHTML = '';
 
-    const filtres = shuffle(baseDeDonnees.logiciels.filter(log => {
-        // Filtre par licence
-        if (filtreActifs.licence !== 'tout') {
-            const estLibre = estLicenceLibre(log["Prix licence"]);
-            if (filtreActifs.licence === 'libre' && !estLibre) return false;
-            if (filtreActifs.licence === 'privateur' && estLibre) return false;
+    const filtered = shuffle(database.logiciels.filter(log => {
+        // Filter by licence
+        if (activeFilters.licence !== 'tout') {
+            const isFree = isFreeLicence(log["Prix licence"]);
+            if (activeFilters.licence === 'libre' && !isFree) return false;
+            if (activeFilters.licence === 'privateur' && isFree) return false;
         }
 
-        // Filtre par plateforme
-        if (filtreActifs.plateformes.length > 0) {
-            const logPlateformes = log.Plateforme || [];
-            const matchPlateforme = filtreActifs.plateformes.some(p => logPlateformes.includes(p));
-            if (!matchPlateforme) return false;
+        // Filter by platform
+        if (activeFilters.platforms.length > 0) {
+            const logPlatforms = log.Plateforme || [];
+            const matchPlatform = activeFilters.platforms.some(p => logPlatforms.includes(p));
+            if (!matchPlatform) return false;
         }
 
-        // Filtre par usages
-        if (filtreActifs.usages.length > 0) {
-            if (!log.Usages || !filtreActifs.usages.every(tag => log.Usages.includes(tag))) {
+        // Filter by usages
+        if (activeFilters.usages.length > 0) {
+            if (!log.Usages || !activeFilters.usages.every(tag => log.Usages.includes(tag))) {
                 return false;
             }
         }
@@ -166,19 +157,19 @@ function appliquerTousFiltres() {
         return true;
     }));
 
-    filtres.forEach(log => {
+    filtered.forEach(log => {
         const row = document.createElement('tr');
-        const prix = Array.isArray(log["Prix licence"]) ? log["Prix licence"].join(', ') : log["Prix licence"];
-        const plateformes = log.Plateforme.join(', ');
+        const price = Array.isArray(log["Prix licence"]) ? log["Prix licence"].join(', ') : log["Prix licence"];
+        const platforms = log.Plateforme.join(', ');
         row.innerHTML = `
             <td><a href="${log.url}" target="_blank">${log.Nom}</a></td>
             <td class="usages-cell">${(log.Usages || []).join(", ")}</td>
-            <td>${prix || "Inconnu"}</td>
-            <td>${plateformes}</td>
+            <td>${price || "Unknown"}</td>
+            <td>${platforms}</td>
         `;
         table.appendChild(row);
     });
-    compteur.textContent = filtres.length;
+    counter.textContent = filtered.length;
 }
 
 function shuffle(array) {

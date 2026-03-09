@@ -1,0 +1,247 @@
+/* Cartography layout */
+.carto-container {
+    display: flex;
+    height: calc(100vh - 40px);
+}
+
+.carto-sidebar {
+    width: 280px;
+    min-width: 280px;
+    background: var(--bg-sidebar);
+    border-right: 1px solid var(--border);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.carto-sidebar h2 {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.carto-main {
+    flex: 1;
+    position: relative;
+    background: var(--bg-graph);
+}
+
+#graphSvg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Mode buttons */
+.mode-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.mode-btn {
+    padding: 4px 10px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: var(--bg-input);
+    color: var(--text-primary);
+    transition: 0.15s;
+    font-size: 12px;
+}
+
+.mode-btn:hover { background-color: var(--bg-input-hover); }
+
+.mode-btn.actif {
+    background-color: var(--accent);
+    color: white;
+    border-color: var(--accent-dark);
+}
+
+/* Threshold slider */
+.seuil-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.seuil-control input[type="range"] {
+    flex: 1;
+    cursor: pointer;
+}
+
+#seuilValeur {
+    font-weight: 600;
+    font-size: 14px;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* Search */
+#recherche {
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    font-size: 13px;
+    outline: none;
+    background: var(--bg-input);
+    color: var(--text-primary);
+}
+
+#recherche:focus { border-color: var(--accent); }
+
+/* Actions */
+.carto-actions {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.carto-actions button {
+    flex: 1;
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    cursor: pointer;
+    background: var(--bg-input);
+    color: var(--text-primary);
+    font-size: 12px;
+    transition: 0.15s;
+}
+
+.carto-actions button:hover { background: var(--bg-input-hover); }
+
+/* Legend */
+.legende {
+    margin-bottom: 15px;
+}
+
+.legende h4 {
+    margin: 0 0 8px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-secondary);
+}
+
+.legende-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+    font-size: 11px;
+    color: var(--text-secondary);
+}
+
+.legende-couleur {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.legende-separation {
+    margin: 10px 0 6px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 12px;
+    max-width: 280px;
+    box-shadow: 0 4px 12px var(--shadow-strong);
+    pointer-events: none;
+    z-index: 100;
+    line-height: 1.4;
+    color: var(--text-primary);
+}
+
+.tooltip.hidden { display: none; }
+
+.tooltip-nom {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.tooltip-licence {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.tooltip-tags {
+    font-size: 11px;
+    color: var(--text-faint);
+}
+
+.tooltip-description {
+    font-size: 11px;
+    color: var(--text-secondary);
+    margin-top: 4px;
+    border-top: 1px solid var(--border-light);
+    padding-top: 4px;
+}
+
+.tooltip-edge {
+    font-size: 11px;
+    color: var(--text-faint);
+}
+
+/* Info panel */
+.info-panel {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 12px 14px;
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 280px;
+    max-height: 50vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 12px var(--shadow-strong);
+    z-index: 50;
+    color: var(--text-primary);
+}
+
+.info-panel.hidden { display: none; }
+
+.info-panel h4 {
+    margin: 0 0 6px;
+    font-size: 13px;
+}
+
+.info-panel a {
+    color: var(--text-link);
+    text-decoration: none;
+}
+
+.info-panel a:hover { text-decoration: underline; }
+
+.info-panel .info-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    margin-top: 4px;
+}
+
+.info-panel .info-tag {
+    background: var(--bg-tag);
+    color: var(--text-secondary);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+}

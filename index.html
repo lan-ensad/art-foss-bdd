@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cartographie Logiciels</title>
+    <title>Software Cartography</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav class="nav-principale">
+        <a href="interface.html" class="nav-lien actif">Table</a>
+        <a href="cartographie.html" class="nav-lien">Cartography</a>
+        <span class="nav-spacer"></span>
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme"></button>
+    </nav>
     <div class="container">
         <aside class="sidebar">
-            <h1>Filtres</h1>
+            <h1>Filters</h1>
 
             <div class="filtre-section">
                 <h3>Licence</h3>
                 <div class="filtre-licence">
-                    <button class="filtre-btn actif" data-licence="tout">Tout</button>
-                    <button class="filtre-btn" data-licence="libre">Libre</button>
-                    <button class="filtre-btn" data-licence="privateur">Privateur</button>
+                    <button class="filtre-btn actif" data-licence="tout">All</button>
+                    <button class="filtre-btn" data-licence="libre">Free</button>
+                    <button class="filtre-btn" data-licence="privateur">Proprietary</button>
                 </div>
             </div>
 
             <div class="filtre-section">
-                <h3>Plateforme</h3>
+                <h3>Platform</h3>
                 <div id="filtrePlateformes" class="filtre-plateformes"></div>
             </div>
 
@@ -32,16 +38,16 @@
 
         <main class="main">
             <div class="main-header">
-                <h2>Logiciels</h2>
-                <span><span id="compteurLogiciels">0</span> résultats</span>
+                <h2>Software</h2>
+                <span><span id="compteurLogiciels">0</span> results</span>
             </div>
             <table>
                 <thead>
                     <tr>
-                        <th>Nom</th>
+                        <th>Name</th>
                         <th>Usages</th>
                         <th>Licence</th>
-                        <th>Plateformes</th>
+                        <th>Platforms</th>
                     </tr>
                 </thead>
                 <tbody id="listeLogiciels"></tbody>
@@ -49,6 +55,7 @@
         </main>
     </div>
 
+    <script src="data-utils.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

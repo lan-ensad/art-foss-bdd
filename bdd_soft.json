@@ -155,7 +155,7 @@
       {
         "Nom": "Kdenlive",
         "Usages": [
-            "Vidéo", "Compositing"
+            "Vidéo", "Compositing", "Montage"
         ],
         "Interface": "graphique",
         "Plateforme": [
@@ -166,6 +166,19 @@
         "Prix licence": "libre",
         "Typologie": "Logiciel local",
         "url": "https://kdenlive.org/"
+      },
+      {
+        "Nom": "Hype Tumult",
+        "Usages": [
+            "Vidéo", "Compositing", "Montage", "Web", "Programmation", "Animation", "Interaction"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "MacOS"
+        ],
+        "Prix licence": "49.99$",
+        "Typologie": "Logiciel local",
+        "url": "https://tumult.com/hype/"
       },
       {
         "Nom": "CorelDRAW",
