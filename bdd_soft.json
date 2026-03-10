@@ -1369,7 +1369,7 @@
       {
         "Nom": "OpenSCAD",
         "Usages": [
-          "3D", "Modélisation", "Programmation", "Generative", "Paramétrique"
+          "3D", "Modélisation", "CAD", "Programmation", "Generative", "Paramétrique", "Automatisation", "Generative"
         ],
         "Interface": "graphique",
         "Plateforme": [
