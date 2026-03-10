@@ -89,7 +89,7 @@
           "Windows",
           "MacOS"
         ],
-        "Prix licence": "995€",
+        "Prix licence": ["Un utilisateur 995€", "Educ 195€"],
         "Typologie": "Logiciel local",
         "url": "https://www.rhino3d.com/"
       },
