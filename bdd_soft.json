@@ -266,6 +266,7 @@
             "2D", "Bitmap", "Image", "Photo", "Traitement de masse", "Automatisation", "Formatage"
         ],
         "Interface": "ligne de commande",
+        "Description": "Logiciel de manipulation et d'encodage vidéo en ligne de commande supportant tous les formats éxistant. Son code de qualité et son support exhaustif des formats en font une brique fondamentale des logiciels de manipulation vidéo Libre et propriétaire",
         "Plateforme": [
           "Windows",
           "MacOS",
@@ -295,6 +296,7 @@
             "2D", "Photo", "Image", "Bitmap"
         ],
         "Interface": "graphique",
+        "Description": "Logiciel de développement de Raw, offrant un large éventail de possibilité et une documentation soignée traduite en Français",
         "Plateforme": [
           "Windows",
           "MacOS",
@@ -385,6 +387,7 @@
             "2D", "Bitmap", "Image", "Photo", "Animation"
         ],
         "Interface": "graphique",
+        "Description":"Logiciel de peinture numérique et d'animation 2D basé sur la bibliothèque graphique QT. Possède un puissant outil de scripting Python, permettant par exemple l'importation de scènes Blender.",  
         "Plateforme": [
           "Windows",
           "MacOS",
@@ -397,9 +400,10 @@
       {
         "Nom": "Gimp",
         "Usages": [
-            "2D", "Bitmap", "Image", "Photo"
+            "2D", "Bitmap", "Vectoriel", "Image", "Photo"
         ],
         "Interface": "graphique",
+        "Description": "Logiciel de retouche d'image bitmap et vectorielle, aux transformations non destructives (depuis la version 3.0) et une puissant outil de scripting permettant la manipulation groupée de plusieurs images.",
         "Plateforme": [
           "Windows",
           "MacOS",
@@ -1515,20 +1519,6 @@
         "url": "https://audacity.fr/"
       },
       {
-        "Nom": "OpenToonz",
-        "Usages": [
-          "Animation", "2D", "Image"
-        ],
-        "Interface": "graphique",
-        "Plateforme": [
-          "Windows",
-          "MacOS"
-        ],
-        "Prix licence": "libre",
-        "Typologie": "Logiciel local",
-        "url": "https://opentoonz.github.io/"
-      },
-      {
         "Nom": "Obsidian",
         "Usages": [
             "Ecriture", "Publication", "Diagrammes", "Organisation", "Collaboration", "Texte"
@@ -1574,7 +1564,7 @@
         "Plateforme": [
           "Navigateur"
         ],
-        "Prix licence": "freemium",
+        "Prix licence": "Freemium",
         "Typologie": "Logiciel local",
         "url": "https://www.overleaf.com/"
       },
@@ -1602,7 +1592,7 @@
           "MacOS",
           "Linux"
         ],
-        "Prix licence": "freemium",
+        "Prix licence": "Freemium",
         "Typologie": "Logiciel local",
         "url": "https://fontba.se/"
       },
@@ -1665,6 +1655,148 @@
         "Prix licence": "libre",
         "Typologie": "Framework for content-driven websites",
         "url": "https://astro.build/"
-        }
+      },
+      {
+        "Nom": "Photopea",
+        "Usages": [
+            "2D", "Bitmap", "Photo", "Image"
+        ],
+        "Description":"Logiciel de retouche d'image supportant le format propriétaire d'Adobe Photoshop .psd",
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux",
+          "Navigateur"
+        ],
+        "Prix licence": "Freemium",
+        "Typologie": "Logiciel local",
+        "url": "https://www.photopea.com/"
+      },
+      {
+        "Nom": "Pikimov",
+        "Usages": [
+            "3D", "Compositing", "Animation", "Vidéo", "Montage"
+        ],
+        "Description":"Logiciel de Motion design et de compositing 2D et 3D par couche (\"Layer based\"). Conçu sur le modèle de Photopea, comme alternative à After Effects",
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux",
+          "Navigateur"
+        ],
+        "Prix licence": "Freemium",
+        "Typologie": "Logiciel local",
+        "url": "https://pikimov.com/"
+      },
+      {
+        "Nom": "AEP-Parser",
+        "Usages": [
+            "Formatage"
+        ],
+        "Description":"Script python permetant de parser les fichier propriétaire Adobe After Effects .aep pour en extraire les layers et les propriétés.",
+        "Interface": "Ligne de commande",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "Libre",
+        "Typologie": "Logiciel local",
+        "url": "https://gitlab.com/poufie/aep-parser"
+      },
+      {
+        "Nom": "Clips Studio Paint",
+        "Usages": [
+            "2D", "Bitmap", "Image", "Photo", "Animation"
+        ],
+        "Interface": "graphique",
+        "Description":"Logiciel de peinture numérique et d'animation 2D standard dans l'industrie Asiatique. Fonctionne bien sur linux via Wine. Les mise à niveaux vers chaque nouvelle version sont payantes en cas d'achat de licence illimitée, mais les fichiers de projets ont une très bonne compatibilité entre versions. Seule la version EX comprend les fonctionnalités d'animation",  
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": ["Illimitée Pro 53€ ", "Illimitée EX 234€", "Abonnement Pro 25€/an/appareil", "Abonnement EX 69€/an/appareil"],
+        "Typologie": "Logiciel local",
+        "url": "https://www.clipstudio.net"
+      },
+      {
+        "Nom": "TV Paint",
+        "Usages": [
+            "2D", "Bitmap", "Image", "Animation"
+        ],
+        "Interface": "graphique",
+        "Description":"Logiciel d'animation 2D traditionnelle numérique. Standard de l'industrie en France. Si c'est un logiciel à achat unique, chaque nouvelle version requiert une mise à niveau. Par exemple, le passage de TVPaint 11 Standard à 12 coûte 390€. ",  
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": ["Standard 780€","Professionnelle 1920€"],
+        "Typologie": "Logiciel local",
+        "url": "https://tvpaint.com"
+      },
+    {
+        "Nom": "Toon Boon Harmony",
+        "Usages": [
+            "2D", "Bitmap", "Vectoriel", "Image", "Compositing", "Animation"
+        ],
+        "Interface": "graphique",
+        "Description":"Logiciel de peinture numérique et d'animation 2D basé sur la bibliothèque graphique QT. Possède un puissant outil de scripting Python, permettant par exemple l'importation de scènes Blender.",  
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": ["Essentials 32€/mois", "Advanced 81€/Mois", "Premium  147€/mois"],
+        "Typologie": "Logiciel local",
+        "url": "https://www.toonboom.com"
+      },
+      {
+        "Nom": "Procreate",
+        "Usages": [
+            "2D", "Bitmap", "Image", "Animation"
+        ],
+        "Interface": "graphique",
+        "Description":"Logiciel de peinture numérique et d'animation 2D conçu pour téléphone et tablettes Apple seulement.",  
+        "Plateforme": [
+          "IPadOS",
+          "IOS"
+        ],
+        "Prix licence": "14.99€",
+        "Typologie": "Logiciel local",
+        "url":"https://procreate.com/"
+      },
+      {
+        "Nom": "OpenToonz",
+        "Usages": [
+            "2D", "Bitmap", "Image", "Photo", "Animation"
+        ],
+        "Interface": "graphique",
+        "Description":"Logiciel d'animation notamment utilisé par le Studio Ghibli. Si la documentation Japonaise semble exhaustive, la documentation anglaise est difficile à suivre. L'interface du logiciel est touffue et peu accessible.",  
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url":"https://opentoonz.github.io/e/"
+      },
+      {
+        "Nom": "Firka Animation Software",
+        "Usages": [
+            "2D", "Animation", "bitmap", "Photo"
+        ],
+        "Interface": "graphique",
+        "Description":"Logiciel de Line test (prise de vue pour l'aniamtion 2D traditionnelle) développé par le sutdio Hongrois Firka depuis 1998, dont le code à été ouvert en 2021. Ci-celui-ci peut-être copier ou lu librement, il ne peux pas être modifié.",  
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url":"http://firkafilm.com/about_f.html"
+      }
     ]
   }
