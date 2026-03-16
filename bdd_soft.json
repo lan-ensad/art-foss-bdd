@@ -1519,20 +1519,6 @@
         "url": "https://audacity.fr/"
       },
       {
-        "Nom": "OpenToonz",
-        "Usages": [
-          "Animation", "2D", "Image"
-        ],
-        "Interface": "graphique",
-        "Plateforme": [
-          "Windows",
-          "MacOS"
-        ],
-        "Prix licence": "libre",
-        "Typologie": "Logiciel local",
-        "url": "https://opentoonz.github.io/"
-      },
-      {
         "Nom": "Obsidian",
         "Usages": [
             "Ecriture", "Publication", "Diagrammes", "Organisation", "Collaboration", "Texte"
@@ -1578,7 +1564,7 @@
         "Plateforme": [
           "Navigateur"
         ],
-        "Prix licence": "freemium",
+        "Prix licence": "Freemium",
         "Typologie": "Logiciel local",
         "url": "https://www.overleaf.com/"
       },
@@ -1606,7 +1592,7 @@
           "MacOS",
           "Linux"
         ],
-        "Prix licence": "freemium",
+        "Prix licence": "Freemium",
         "Typologie": "Logiciel local",
         "url": "https://fontba.se/"
       },
@@ -1683,7 +1669,7 @@
           "Linux",
           "Navigateur"
         ],
-        "Prix licence": "Gratuit non Libre",
+        "Prix licence": "Freemium",
         "Typologie": "Logiciel local",
         "url": "https://www.photopea.com/"
       },
@@ -1692,7 +1678,7 @@
         "Usages": [
             "3D", "Compositing", "Animation", "Vidéo", "Montage"
         ],
-        "Description":"Logiciel de Motion design et de compositing 2D et 3D par couche ("Layer based"). Conçu sur le modèle de Photopea, comme alternative à After Effects",
+        "Description":"Logiciel de Motion design et de compositing 2D et 3D par couche (\"Layer based\"). Conçu sur le modèle de Photopea, comme alternative à After Effects",
         "Interface": "graphique",
         "Plateforme": [
           "Windows",
@@ -1700,7 +1686,7 @@
           "Linux",
           "Navigateur"
         ],
-        "Prix licence": "Gratuit non Libre",
+        "Prix licence": "Freemium",
         "Typologie": "Logiciel local",
         "url": "https://pikimov.com/"
       },
@@ -1731,7 +1717,7 @@
           "Windows",
           "MacOS"
         ],
-        "Prix licence": ["Illimitée Pro 53€ ", "Illimitée EX 234€", "Abonnement Pro 25€/an/appareil", "Abonnement EX 69€/an/appareil"]
+        "Prix licence": ["Illimitée Pro 53€ ", "Illimitée EX 234€", "Abonnement Pro 25€/an/appareil", "Abonnement EX 69€/an/appareil"],
         "Typologie": "Logiciel local",
         "url": "https://www.clipstudio.net"
       },
@@ -1754,7 +1740,7 @@
     {
         "Nom": "Toon Boon Harmony",
         "Usages": [
-            "2D", "Bitmap", "Vectoriel" "Image", "Compositing", "Animation"
+            "2D", "Bitmap", "Vectoriel", "Image", "Compositing", "Animation"
         ],
         "Interface": "graphique",
         "Description":"Logiciel de peinture numérique et d'animation 2D basé sur la bibliothèque graphique QT. Possède un puissant outil de scripting Python, permettant par exemple l'importation de scènes Blender.",  
@@ -1811,6 +1797,6 @@
         "Prix licence": "libre",
         "Typologie": "Logiciel local",
         "url":"http://firkafilm.com/about_f.html"
-      },
+      }
     ]
   }
