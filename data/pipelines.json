@@ -1,0 +1,85 @@
+[
+    {
+        "nom": "Court-métrage animation 3D",
+        "etapes": [
+            {"role": "Storyboard", "tags": ["Ecriture"]},
+            {"role": "Modélisation", "tags": ["Modélisation", "3D"]},
+            {"role": "Texturing", "tags": ["Texturing", "Bitmap"]},
+            {"role": "Animation", "tags": ["Animation"]},
+            {"role": "Rendu", "tags": ["Moteur de rendu"]},
+            {"role": "Compositing", "tags": ["Compositing"]},
+            {"role": "Montage", "tags": ["Montage"]},
+            {"role": "Sound design", "tags": ["Son", "Musique"]}
+        ]
+    },
+    {
+        "nom": "Publication éditoriale (print)",
+        "etapes": [
+            {"role": "Écriture", "tags": ["Ecriture", "Texte"]},
+            {"role": "Illustration", "tags": ["Vectoriel", "Illustration", "2D"]},
+            {"role": "Retouche image", "tags": ["Photo", "Bitmap", "Retouche"]},
+            {"role": "Mise en page", "tags": ["PAO", "Publication"]},
+            {"role": "Export final", "tags": ["Formatage", "Publication"]}
+        ]
+    },
+    {
+        "nom": "Installation interactive",
+        "etapes": [
+            {"role": "Prototypage", "tags": ["Programmation"]},
+            {"role": "Création visuelle", "tags": ["Generative", "2D", "3D"]},
+            {"role": "Sound design", "tags": ["Son", "Musique"]},
+            {"role": "Moteur interactif", "tags": ["Interaction", "Temps réel"]},
+            {"role": "Diffusion", "tags": ["Diffusion", "Temps réel"]}
+        ]
+    },
+    {
+        "nom": "Production musicale",
+        "etapes": [
+            {"role": "Composition", "tags": ["Musique", "MAO"]},
+            {"role": "Enregistrement", "tags": ["Son", "MAO"]},
+            {"role": "Mixage", "tags": ["Son", "Musique", "MAO"]},
+            {"role": "Mastering", "tags": ["Son", "MAO"]},
+            {"role": "Export final", "tags": ["Formatage", "Son"]}
+        ]
+    },
+    {
+        "nom": "Jeu vidéo 2D/3D",
+        "etapes": [
+            {"role": "Game design", "tags": ["Ecriture", "Jeux vidéo"]},
+            {"role": "Assets 2D/3D", "tags": ["Modélisation", "2D", "3D"]},
+            {"role": "Animation", "tags": ["Animation"]},
+            {"role": "Sound design", "tags": ["Son", "Musique"]},
+            {"role": "Moteur de jeu", "tags": ["Jeux vidéo", "Moteur de rendu"]},
+            {"role": "Export final", "tags": ["Jeux vidéo", "Interaction"]}
+        ]
+    },
+    {
+        "nom": "Fabrication numérique (impression 3D)",
+        "etapes": [
+            {"role": "Modélisation CAD", "tags": ["CAD", "Modélisation", "Paramétrique"]},
+            {"role": "Slicing", "tags": ["Impression 3D"]},
+            {"role": "Gestion projet", "tags": ["Organisation"]}
+        ]
+    },
+    {
+        "nom": "Site web / publication web",
+        "etapes": [
+            {"role": "Écriture contenu", "tags": ["Ecriture", "Texte"]},
+            {"role": "Design UI/UX", "tags": ["Mock-up", "UI/UX"]},
+            {"role": "Développement", "tags": ["Programmation", "Web"]},
+            {"role": "Médias (image/vidéo)", "tags": ["Photo", "Bitmap", "Vidéo"]},
+            {"role": "Déploiement", "tags": ["Web", "Automatisation"]}
+        ]
+    },
+    {
+        "nom": "Vidéo / court-métrage live",
+        "etapes": [
+            {"role": "Tournage", "tags": ["Vidéo"]},
+            {"role": "Montage", "tags": ["Montage", "Vidéo"]},
+            {"role": "Étalonnage", "tags": ["Compositing", "Vidéo"]},
+            {"role": "Compositing / VFX", "tags": ["Compositing", "Animation"]},
+            {"role": "Sound design", "tags": ["Son", "Musique"]},
+            {"role": "Export final", "tags": ["Formatage", "Vidéo"]}
+        ]
+    }
+]

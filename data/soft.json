@@ -1,0 +1,2166 @@
+[
+    {
+        "Nom": "Blender",
+        "Domaines": ["3D", "Vidéo"],
+        "Etapes": ["Modélisation", "Animation", "Compositing", "Texturing", "Moteur de rendu", "Sculpt", "Generative", "Paramétrique", "CAD"],
+        "Description": "Logiciel de modélisation 3D. Permet de faire de l'animation, de la modélisation mécanique, des rendus, modélisation paramétrique... La grande force du logiciel réside dans sa communauté et la diversité des pratiques possibles et des addons qui viennent augmenter les possibilités.",
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://www.blender.org/",
+        "formats": {
+            "import": ["fbx", "obj", "gltf", "glb", "stl", "abc", "usd", "usda", "usdc", "svg", "dae", "ply", "x3d", "3ds", "bvh"],
+            "export": ["fbx", "obj", "gltf", "glb", "stl", "abc", "usd", "usda", "usdc", "svg", "dae", "ply", "x3d"],
+            "build": [],
+            "natif": ["blend"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Houdini",
+        "Domaines": ["3D", "Vidéo"],
+        "Etapes": ["Modélisation", "Animation", "Compositing", "Generative", "Paramétrique"],
+        "Description": "",
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": ["Education : 75$/an", "Indie : 299$/an", "Commerial core : 1415$/an", "Commerial FX: 3369$/an"],
+        "Typologie": "Logiciel local",
+        "url": "https://www.sidefx.com/",
+        "formats": {
+            "import": ["fbx", "obj", "abc", "usd", "usda", "usdc", "bgeo", "geo", "dae", "stl", "ply"],
+            "export": ["fbx", "obj", "abc", "usd", "usda", "usdc", "bgeo", "geo", "stl", "ply"],
+            "build": [],
+            "natif": ["hip", "hipnc", "hiplc"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Metashape",
+        "Domaines": ["3D"],
+        "Etapes": ["Modélisation", "Photogramétrie"],
+        "Description": "",
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": ["Standard 107$", "Professional 3499$"],
+        "Typologie": "Logiciel local",
+        "url": "https://www.agisoft.com/",
+        "formats": {
+            "import": ["jpg", "jpeg", "png", "tiff", "tif", "bmp", "exr"],
+            "export": ["obj", "fbx", "ply", "stl", "dae", "dxf", "3ds", "pdf", "tiff", "jpg", "png", "las", "xyz"],
+            "build": [],
+            "natif": ["psx"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "WebODM",
+        "Domaines": ["3D"],
+        "Etapes": ["Modélisation", "Photogramétrie"],
+        "Description": "",
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux", "Navigateur"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://opendronemap.org/webodm/",
+        "formats": {
+            "import": ["jpg", "jpeg", "png", "tiff", "tif"],
+            "export": ["obj", "ply", "las", "laz", "tiff", "png", "jpg", "dxf"],
+            "build": [],
+            "natif": []
+        },
+        "collaboration": {
+            "type": ["cloud"],
+            "protocoles": ["api-rest"]
+        }
+    },
+    {
+        "Nom": "Rhinocéros",
+        "Domaines": ["3D"],
+        "Etapes": ["Modélisation", "CAD"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": ["Un utilisateur 995€", "Educ 195€"],
+        "Typologie": "Logiciel local",
+        "url": "https://www.rhino3d.com/",
+        "formats": {
+            "import": ["3dm", "dwg", "dxf", "fbx", "obj", "stl", "step", "iges", "sat", "skp", "3ds", "ai", "pdf"],
+            "export": ["3dm", "dwg", "dxf", "fbx", "obj", "stl", "step", "iges", "sat", "skp", "3ds", "pdf"],
+            "build": [],
+            "natif": ["3dm"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Pure Data",
+        "Domaines": ["Son", "Musique", "Interactif"],
+        "Etapes": ["Generative", "Interaction", "Temps réel", "MAO"],
+        "Interface": "graphique, nodale",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://puredata.info/",
+        "formats": {
+            "import": ["wav", "aiff", "mp3"],
+            "export": ["wav", "aiff"],
+            "build": [],
+            "natif": ["pd"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": ["osc", "midi", "jack"]
+        }
+    },
+    {
+        "Nom": "Adobe Photoshop",
+        "Domaines": ["2D", "Bitmap", "Photo"],
+        "Etapes": ["Retouche", "Illustration"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": "26,21€/mois",
+        "Typologie": "Logiciel cloud",
+        "url": "https://www.adobe.com/products/photoshop.html",
+        "formats": {
+            "import": ["psd", "png", "jpg", "jpeg", "tiff", "tif", "bmp", "gif", "webp", "raw", "cr2", "nef", "arw", "dng", "eps", "pdf", "svg"],
+            "export": ["psd", "png", "jpg", "jpeg", "tiff", "tif", "bmp", "gif", "webp", "pdf", "eps"],
+            "build": [],
+            "natif": ["psd", "psb"]
+        },
+        "collaboration": {
+            "type": ["cloud"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "ImageMagick",
+        "Domaines": ["2D", "Bitmap", "Photo"],
+        "Etapes": ["Traitement de masse", "Automatisation", "Formatage"],
+        "Interface": "ligne de commande",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://imagemagick.org/",
+        "formats": {
+            "import": ["png", "jpg", "jpeg", "tiff", "tif", "bmp", "gif", "webp", "svg", "pdf", "psd", "exr", "hdr", "raw", "ico", "tga"],
+            "export": ["png", "jpg", "jpeg", "tiff", "tif", "bmp", "gif", "webp", "svg", "pdf", "ico", "tga"],
+            "build": [],
+            "natif": ["miff"]
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Shotcut",
+        "Domaines": ["Vidéo"],
+        "Etapes": ["Montage", "Compositing"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://shotcut.org/",
+        "formats": {
+            "import": ["mp4", "avi", "mkv", "mov", "webm", "mp3", "wav", "flac", "ogg", "png", "jpg", "gif", "svg"],
+            "export": ["mp4", "avi", "mkv", "mov", "webm", "mp3", "wav", "gif"],
+            "build": [],
+            "natif": ["mlt"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Kdenlive",
+        "Domaines": ["Vidéo"],
+        "Etapes": ["Montage", "Compositing"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://kdenlive.org/",
+        "formats": {
+            "import": ["mp4", "avi", "mkv", "mov", "webm", "mp3", "wav", "flac", "ogg", "png", "jpg", "gif", "svg"],
+            "export": ["mp4", "avi", "mkv", "mov", "webm", "mp3", "wav"],
+            "build": [],
+            "natif": ["kdenlive"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Hype Tumult",
+        "Domaines": ["Interactif", "Web", "Vidéo"],
+        "Etapes": ["Animation", "Interaction"],
+        "Interface": "graphique",
+        "Plateforme": ["MacOS"],
+        "Prix licence": "49.99$",
+        "Typologie": "Logiciel local",
+        "url": "https://tumult.com/hype/",
+        "formats": {
+            "import": ["png", "jpg", "gif", "svg", "mp4", "mp3", "wav", "js", "css"],
+            "export": ["html", "gif", "mp4", "png"],
+            "build": [],
+            "natif": ["hype"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "CorelDRAW",
+        "Domaines": ["2D", "Vectoriel", "Bitmap", "Publication", "Typographie"],
+        "Etapes": ["Illustration", "PAO", "Typographie"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Navigateur"],
+        "Prix licence": ["Go : 115€/an", "Essentials 2024: 130€", "Standard : 355€/an", "Graphics Suite : 369€/an"],
+        "Typologie": "Logiciel local",
+        "url": "https://www.coreldraw.com/",
+        "formats": {
+            "import": ["cdr", "ai", "psd", "pdf", "eps", "svg", "dwg", "dxf", "png", "jpg", "tiff", "bmp", "gif", "wmf", "emf"],
+            "export": ["cdr", "ai", "pdf", "eps", "svg", "dwg", "dxf", "png", "jpg", "tiff", "bmp", "gif", "wmf", "emf"],
+            "build": [],
+            "natif": ["cdr"]
+        },
+        "collaboration": {
+            "type": ["cloud"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Inkscape",
+        "Domaines": ["2D", "Vectoriel"],
+        "Etapes": ["Illustration"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://inkscape.org/",
+        "formats": {
+            "import": ["svg", "pdf", "eps", "png", "jpg", "bmp", "tiff", "gif", "ai", "dxf", "wmf", "emf", "sk1"],
+            "export": ["svg", "pdf", "eps", "png", "dxf", "wmf", "emf", "ps"],
+            "build": [],
+            "natif": ["svg"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Ardour",
+        "Domaines": ["Son", "Musique"],
+        "Etapes": ["MAO", "Mixage"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://ardour.org/",
+        "formats": {
+            "import": ["wav", "aiff", "flac", "ogg", "mp3", "mid", "midi"],
+            "export": ["wav", "aiff", "flac", "ogg", "mp3"],
+            "build": [],
+            "natif": ["ardour"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": ["jack", "vst", "lv2"]
+        }
+    },
+    {
+        "Nom": "Sublime Text",
+        "Domaines": ["Programmation", "Texte"],
+        "Etapes": ["Ecriture"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "99$",
+        "Typologie": "Logiciel local",
+        "url": "https://www.sublimetext.com/",
+        "formats": {
+            "import": ["txt", "html", "css", "js", "json", "xml", "py", "md", "csv", "yaml", "yml"],
+            "export": ["txt", "html", "css", "js", "json", "xml", "py", "md", "csv", "yaml", "yml"],
+            "build": [],
+            "natif": ["sublime-project"]
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "VSCodium",
+        "Domaines": ["Programmation", "Texte"],
+        "Etapes": ["Ecriture"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://vscodium.com/",
+        "formats": {
+            "import": ["txt", "html", "css", "js", "ts", "json", "xml", "py", "md", "csv", "yaml", "yml", "c", "cpp", "java", "go", "rs"],
+            "export": ["txt", "html", "css", "js", "ts", "json", "xml", "py", "md", "csv", "yaml", "yml", "c", "cpp", "java", "go", "rs"],
+            "build": [],
+            "natif": ["code-workspace"]
+        },
+        "collaboration": {
+            "type": ["versioning"],
+            "protocoles": ["git"]
+        }
+    },
+    {
+        "Nom": "ffmpeg",
+        "Domaines": ["Vidéo", "2D"],
+        "Etapes": ["Formatage", "Traitement de masse", "Export"],
+        "Interface": "ligne de commande",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://ffmpeg.org/",
+        "formats": {
+            "import": ["mp4", "avi", "mkv", "mov", "webm", "mp3", "wav", "flac", "ogg", "aac", "gif", "png", "jpg", "tiff", "bmp", "exr", "m3u8", "ts"],
+            "export": ["mp4", "avi", "mkv", "mov", "webm", "mp3", "wav", "flac", "ogg", "aac", "gif", "png", "jpg"],
+            "build": [],
+            "natif": []
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Autocad",
+        "Domaines": ["3D"],
+        "Etapes": ["Modélisation", "CAD"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": "288€/mois",
+        "Typologie": "Logiciel local",
+        "url": "https://www.autodesk.com/products/autocad/",
+        "formats": {
+            "import": ["dwg", "dxf", "dgn", "pdf", "fbx", "obj", "stl", "step", "iges", "sat", "3ds"],
+            "export": ["dwg", "dxf", "pdf", "fbx", "stl", "sat", "dgn"],
+            "build": [],
+            "natif": ["dwg"]
+        },
+        "collaboration": {
+            "type": ["cloud"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Raw therapee",
+        "Domaines": ["2D", "Bitmap", "Photo"],
+        "Etapes": ["Retouche"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://rawtherapee.com/",
+        "formats": {
+            "import": ["raw", "cr2", "cr3", "nef", "arw", "orf", "rw2", "dng", "tiff", "jpg", "png"],
+            "export": ["tiff", "jpg", "png"],
+            "build": [],
+            "natif": ["pp3"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Processing",
+        "Domaines": ["Programmation", "2D", "Interactif"],
+        "Etapes": ["Generative", "Interaction"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://processing.org/",
+        "formats": {
+            "import": ["png", "jpg", "gif", "svg", "obj", "csv", "json", "xml", "txt"],
+            "export": ["png", "jpg", "gif", "svg", "pdf", "tiff", "mp4"],
+            "build": [],
+            "natif": ["pde"]
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": ["osc"]
+        }
+    },
+    {
+        "Nom": "Arduino IDE",
+        "Domaines": ["Programmation", "Electronique"],
+        "Etapes": ["Interaction", "Temps réel"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://www.arduino.cc/en/software",
+        "formats": {
+            "import": ["ino", "c", "cpp", "h", "hex"],
+            "export": ["ino", "hex"],
+            "build": [],
+            "natif": ["ino"]
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Thonny",
+        "Domaines": ["Programmation", "Electronique"],
+        "Etapes": ["Interaction"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://thonny.org/",
+        "formats": {
+            "import": ["py"],
+            "export": ["py"],
+            "build": [],
+            "natif": ["py"]
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Lmms",
+        "Domaines": ["Son", "Musique"],
+        "Etapes": ["MAO"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://lmms.io/",
+        "formats": {
+            "import": ["wav", "ogg", "flac", "mp3", "mid", "midi", "sf2"],
+            "export": ["wav", "ogg", "mp3", "flac", "mid"],
+            "build": [],
+            "natif": ["mmp"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": ["vst", "midi"]
+        }
+    },
+    {
+        "Nom": "Mixxx",
+        "Domaines": ["Son", "Musique"],
+        "Etapes": ["MAO", "Mixage"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://mixxx.org/",
+        "formats": {
+            "import": ["mp3", "wav", "ogg", "flac", "aiff", "aac", "m4a"],
+            "export": ["wav", "ogg", "mp3"],
+            "build": [],
+            "natif": []
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": ["midi", "jack"]
+        }
+    },
+    {
+        "Nom": "Krita",
+        "Domaines": ["2D", "Bitmap"],
+        "Etapes": ["Illustration", "Animation"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://krita.org/",
+        "formats": {
+            "import": ["kra", "png", "jpg", "gif", "tiff", "bmp", "psd", "webp", "svg", "exr", "ora"],
+            "export": ["kra", "png", "jpg", "gif", "tiff", "bmp", "psd", "webp", "svg", "exr", "ora"],
+            "build": [],
+            "natif": ["kra"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Gimp",
+        "Domaines": ["2D", "Bitmap", "Photo"],
+        "Etapes": ["Retouche", "Illustration"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://www.gimp.org/",
+        "formats": {
+            "import": ["xcf", "png", "jpg", "jpeg", "tiff", "bmp", "gif", "webp", "psd", "eps", "svg", "pdf", "raw", "exr", "ora"],
+            "export": ["png", "jpg", "jpeg", "tiff", "bmp", "gif", "webp", "psd", "eps", "pdf"],
+            "build": [],
+            "natif": ["xcf"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Natron",
+        "Domaines": ["Vidéo", "2D"],
+        "Etapes": ["Compositing", "Animation"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://natrongithub.github.io/",
+        "formats": {
+            "import": ["exr", "png", "jpg", "tiff", "dpx", "mov", "mp4", "avi"],
+            "export": ["exr", "png", "jpg", "tiff", "dpx", "mov", "mp4"],
+            "build": [],
+            "natif": ["ntp"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Canva",
+        "Domaines": ["UI/UX", "Publication"],
+        "Etapes": ["Mock-up", "Illustration", "PAO"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": ["gratuit limité", "110€/ans pro", "90€/ans/personne team"],
+        "Typologie": "Logiciel cloud",
+        "url": "https://www.canva.com/",
+        "formats": {
+            "import": ["png", "jpg", "svg", "pdf", "gif", "mp4"],
+            "export": ["png", "jpg", "svg", "pdf", "gif", "mp4", "pptx"],
+            "build": [],
+            "natif": null
+        },
+        "collaboration": {
+            "type": ["temps-reel", "cloud"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Penpot",
+        "Domaines": ["UI/UX", "Publication"],
+        "Etapes": ["Mock-up", "Illustration"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel cloud",
+        "url": "https://penpot.app/",
+        "formats": {
+            "import": ["svg", "png", "jpg", "gif"],
+            "export": ["svg", "png", "jpg", "pdf"],
+            "build": [],
+            "natif": ["penpot"]
+        },
+        "collaboration": {
+            "type": ["temps-reel", "cloud"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Figma",
+        "Domaines": ["UI/UX", "Publication"],
+        "Etapes": ["Mock-up", "Illustration"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": ["3€,12€,16€ Pro", "5€, 25€, 55€ Organization", "5€, 35€, 90€ Enterprise"],
+        "Typologie": "Logiciel cloud",
+        "url": "https://www.figma.com/",
+        "formats": {
+            "import": ["svg", "png", "jpg", "gif", "fig"],
+            "export": ["svg", "png", "jpg", "pdf"],
+            "build": [],
+            "natif": ["fig"]
+        },
+        "collaboration": {
+            "type": ["temps-reel", "cloud"],
+            "protocoles": ["api-rest"]
+        }
+    },
+    {
+        "Nom": "Adobe InDesign",
+        "Domaines": ["Publication", "Texte"],
+        "Etapes": ["PAO", "Mock-up"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": "26,21€/mois",
+        "Typologie": "Logiciel local",
+        "url": "https://www.adobe.com/products/indesign.html",
+        "formats": {
+            "import": ["indd", "pdf", "eps", "png", "jpg", "tiff", "psd", "ai", "svg", "docx", "txt", "rtf", "xml"],
+            "export": ["indd", "pdf", "epub", "html", "jpg", "png", "xml", "idml"],
+            "build": [],
+            "natif": ["indd", "idml"]
+        },
+        "collaboration": {
+            "type": ["cloud"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Pandoc",
+        "Domaines": ["Texte", "Publication", "Programmation"],
+        "Etapes": ["Formatage", "Automatisation"],
+        "Interface": "ligne de commande",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Framework",
+        "url": "https://pandoc.org/",
+        "formats": {
+            "import": ["md", "html", "docx", "odt", "epub", "tex", "rst", "org", "txt", "json", "csv", "xml"],
+            "export": ["md", "html", "docx", "odt", "epub", "tex", "pdf", "rst", "txt", "json"],
+            "build": [],
+            "natif": []
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "WeasyPrint",
+        "Domaines": ["Texte", "Publication", "Programmation"],
+        "Etapes": ["Formatage", "Automatisation"],
+        "Interface": "ligne de commande",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Librairie python",
+        "url": "https://weasyprint.org/",
+        "formats": {
+            "import": ["html", "css"],
+            "export": ["pdf", "png"],
+            "build": [],
+            "natif": []
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "PagedJS",
+        "Domaines": ["Texte", "Publication", "Programmation"],
+        "Etapes": ["Formatage", "Automatisation"],
+        "Interface": "ligne de commande",
+        "Plateforme": ["Windows", "MacOS", "Linux", "Navigateur"],
+        "Prix licence": "libre",
+        "Typologie": "Librairie javascript",
+        "url": "https://pagedjs.org/",
+        "formats": {
+            "import": ["html", "css", "js"],
+            "export": ["pdf"],
+            "build": [],
+            "natif": []
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Scribus",
+        "Domaines": ["Publication", "Texte"],
+        "Etapes": ["PAO"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://www.scribus.net/",
+        "formats": {
+            "import": ["svg", "pdf", "png", "jpg", "tiff", "eps", "psd", "ai", "txt", "csv", "html"],
+            "export": ["pdf", "png", "svg", "eps", "ps"],
+            "build": [],
+            "natif": ["sla"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Fusion 360",
+        "Domaines": ["3D"],
+        "Etapes": ["Modélisation", "Paramétrique", "CAD", "Moteur de rendu"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": "96€/mois",
+        "Typologie": "Logiciel local",
+        "url": "https://www.autodesk.com/products/fusion-360/",
+        "formats": {
+            "import": ["f3d", "step", "iges", "sat", "smt", "dwg", "dxf", "fbx", "obj", "stl", "3mf", "skp"],
+            "export": ["f3d", "step", "iges", "sat", "dwg", "dxf", "fbx", "obj", "stl", "3mf"],
+            "build": [],
+            "natif": ["f3d"]
+        },
+        "collaboration": {
+            "type": ["cloud"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "3DSMax",
+        "Domaines": ["3D"],
+        "Etapes": ["Modélisation", "Paramétrique", "CAD", "Animation", "Moteur de rendu"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": "282€/mois",
+        "Typologie": "Logiciel local",
+        "url": "https://www.autodesk.com/products/3ds-max/",
+        "formats": {
+            "import": ["max", "fbx", "obj", "3ds", "dae", "dwg", "dxf", "stl", "abc", "sat", "iges", "step"],
+            "export": ["max", "fbx", "obj", "3ds", "dae", "dwg", "dxf", "stl", "abc", "sat"],
+            "build": [],
+            "natif": ["max"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "ZBrush",
+        "Domaines": ["3D"],
+        "Etapes": ["Modélisation", "Sculpt"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": "54€/mois",
+        "Typologie": "Logiciel local",
+        "url": "https://www.maxon.net/en/zbrush",
+        "formats": {
+            "import": ["zpr", "ztl", "obj", "fbx", "stl", "ma", "goz"],
+            "export": ["zpr", "ztl", "obj", "fbx", "stl", "ma", "goz"],
+            "build": [],
+            "natif": ["zpr", "ztl"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Cinema 4D",
+        "Domaines": ["3D"],
+        "Etapes": ["Modélisation", "Sculpt", "Animation"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": "118.80€/mois",
+        "Typologie": "Logiciel local",
+        "url": "https://www.maxon.net/en/cinema-4d",
+        "formats": {
+            "import": ["c4d", "fbx", "obj", "3ds", "dae", "dxf", "stl", "abc", "usd"],
+            "export": ["c4d", "fbx", "obj", "3ds", "dae", "dxf", "stl", "abc", "usd"],
+            "build": [],
+            "natif": ["c4d"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Maya",
+        "Domaines": ["3D"],
+        "Etapes": ["Modélisation", "Paramétrique", "Animation", "Moteur de rendu"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": "282€/mois",
+        "Typologie": "Logiciel local",
+        "url": "https://www.autodesk.com/products/maya/",
+        "formats": {
+            "import": ["ma", "mb", "fbx", "obj", "abc", "dae", "dxf", "stl", "usd", "usda", "usdc"],
+            "export": ["ma", "mb", "fbx", "obj", "abc", "dae", "dxf", "stl", "usd", "usda", "usdc"],
+            "build": [],
+            "natif": ["ma", "mb"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "FreeCad",
+        "Domaines": ["3D"],
+        "Etapes": ["Modélisation", "Paramétrique", "CAD"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://www.freecad.org/",
+        "formats": {
+            "import": ["fcstd", "step", "iges", "stl", "obj", "dxf", "dwg", "svg", "brep", "3mf"],
+            "export": ["fcstd", "step", "iges", "stl", "obj", "dxf", "svg", "brep", "3mf", "amf"],
+            "build": [],
+            "natif": ["fcstd"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Unity",
+        "Domaines": ["3D", "Jeux vidéo", "Interactif"],
+        "Etapes": ["Moteur de rendu", "Interaction", "Temps réel"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "gratuit personnel",
+        "Typologie": "Logiciel local",
+        "url": "https://unity.com/",
+        "formats": {
+            "import": ["fbx", "obj", "dae", "3ds", "dxf", "gltf", "glb", "png", "jpg", "tiff", "psd", "exr", "hdr", "wav", "mp3", "ogg", "aiff"],
+            "export": ["fbx", "obj", "png", "wav"],
+            "build": ["unitypackage", "apk", "exe"],
+            "natif": ["unity", "unitypackage"]
+        },
+        "collaboration": {
+            "type": ["versioning", "cloud"],
+            "protocoles": ["git"]
+        }
+    },
+    {
+        "Nom": "Unreal Engine",
+        "Domaines": ["3D", "Jeux vidéo", "Interactif"],
+        "Etapes": ["Moteur de rendu", "Interaction", "Temps réel"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "gratuit personnel",
+        "Typologie": "Logiciel local",
+        "url": "https://www.unrealengine.com/",
+        "formats": {
+            "import": ["fbx", "obj", "gltf", "glb", "abc", "usd", "png", "jpg", "tiff", "exr", "hdr", "wav", "mp3", "ogg"],
+            "export": ["fbx", "obj", "png", "wav"],
+            "build": ["exe", "apk", "pak", "uasset"],
+            "natif": ["uproject", "uasset", "umap"]
+        },
+        "collaboration": {
+            "type": ["versioning"],
+            "protocoles": ["git"]
+        }
+    },
+    {
+        "Nom": "RPG Maker",
+        "Domaines": ["Jeux vidéo", "2D"],
+        "Etapes": ["Interaction", "Ecriture"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": ["92,24€ XP-MZ", "77,99€ MZ", "76,87€ MV", "24,50€ XP"],
+        "Typologie": "Logiciel local",
+        "url": "https://www.rpgmakerWeb.com/",
+        "formats": {
+            "import": ["png", "jpg", "ogg", "wav", "mp3", "mid"],
+            "export": ["png", "ogg", "wav"],
+            "build": ["exe", "html"],
+            "natif": ["rpgproject"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Construct Animate",
+        "Domaines": ["Jeux vidéo", "2D", "Interactif"],
+        "Etapes": ["Animation", "Interaction"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": ["54,99€/ans personnal", "198,99€/ans business", "14,99€/ans education"],
+        "Typologie": "Logiciel local",
+        "url": "https://www.construct.net/en/animation-software",
+        "formats": {
+            "import": ["png", "jpg", "svg", "gif", "wav", "mp3", "ogg"],
+            "export": ["png", "gif", "svg"],
+            "build": ["html", "mp4"],
+            "natif": ["c3a"]
+        },
+        "collaboration": {
+            "type": ["cloud"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Construct 3",
+        "Domaines": ["Jeux vidéo", "2D", "Interactif"],
+        "Etapes": ["Interaction"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": ["119,99€/ans personnal", "428,99€/ans business", "32,99€/ans education"],
+        "Typologie": "Logiciel local",
+        "url": "https://www.construct.net/en/make-games/games-editor",
+        "formats": {
+            "import": ["png", "jpg", "svg", "gif", "wav", "mp3", "ogg"],
+            "export": ["png", "wav", "ogg"],
+            "build": ["html", "apk", "exe"],
+            "natif": ["c3p"]
+        },
+        "collaboration": {
+            "type": ["cloud"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Twine",
+        "Domaines": ["Jeux vidéo", "Interactif"],
+        "Etapes": ["Ecriture", "Interaction"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux", "Navigateur"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://twinery.org/",
+        "formats": {
+            "import": ["html", "twee"],
+            "export": ["html"],
+            "build": [],
+            "natif": ["html", "twee"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Godot",
+        "Domaines": ["Jeux vidéo", "3D", "2D", "Programmation"],
+        "Etapes": ["Moteur de rendu", "Interaction"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://godotengine.org/",
+        "formats": {
+            "import": ["gltf", "glb", "fbx", "obj", "dae", "png", "jpg", "svg", "wav", "ogg", "mp3"],
+            "export": ["gltf", "glb", "png", "wav", "ogg"],
+            "build": ["exe", "apk", "html", "dmg", "tscn", "tres"],
+            "natif": ["godot", "tscn", "tres"]
+        },
+        "collaboration": {
+            "type": ["versioning"],
+            "protocoles": ["git"]
+        }
+    },
+    {
+        "Nom": "Adobe Premier Pro",
+        "Domaines": ["Vidéo"],
+        "Etapes": ["Montage", "Compositing"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": "26,21€/mois",
+        "Typologie": "Logiciel cloud",
+        "url": "https://www.adobe.com/products/premiere.html",
+        "formats": {
+            "import": ["mp4", "avi", "mkv", "mov", "mxf", "wav", "mp3", "aac", "png", "jpg", "tiff", "psd", "exr", "prores"],
+            "export": ["mp4", "avi", "mov", "mxf", "wav", "mp3", "aac", "png", "jpg", "gif", "prores"],
+            "build": [],
+            "natif": ["prproj"]
+        },
+        "collaboration": {
+            "type": ["cloud"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "DaVinci Resolve",
+        "Domaines": ["Vidéo"],
+        "Etapes": ["Montage", "Compositing", "Retouche"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": ["gratuit limité", "studio : 295€"],
+        "Typologie": "Logiciel local",
+        "url": "https://www.blackmagicdesign.com/products/davinciresolve/",
+        "formats": {
+            "import": ["mp4", "avi", "mkv", "mov", "mxf", "wav", "mp3", "aac", "flac", "png", "jpg", "tiff", "exr", "dpx", "braw"],
+            "export": ["mp4", "avi", "mov", "mxf", "wav", "aac", "png", "jpg", "tiff", "exr", "dpx", "prores"],
+            "build": [],
+            "natif": ["drp"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Final cut pro",
+        "Domaines": ["Vidéo"],
+        "Etapes": ["Montage", "Compositing"],
+        "Interface": "graphique",
+        "Plateforme": ["MacOS"],
+        "Prix licence": "349,99€",
+        "Typologie": "Logiciel local",
+        "url": "https://www.apple.com/final-cut-pro/",
+        "formats": {
+            "import": ["mp4", "mov", "avi", "mxf", "wav", "mp3", "aac", "aiff", "png", "jpg", "tiff", "psd", "prores"],
+            "export": ["mp4", "mov", "mxf", "prores"],
+            "build": [],
+            "natif": ["fcpbundle"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Pro Tools",
+        "Domaines": ["Son", "Musique"],
+        "Etapes": ["MAO", "Mixage", "Mastering"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": ["9€/mois", "34€/mois Stuio", "99€/mois Ultimate"],
+        "Typologie": "Logiciel local",
+        "url": "https://www.avid.com/pro-tools",
+        "formats": {
+            "import": ["wav", "aiff", "mp3", "aac", "flac", "ogg", "mid", "midi", "omf", "aaf"],
+            "export": ["wav", "aiff", "mp3", "aac", "mid", "omf", "aaf"],
+            "build": [],
+            "natif": ["ptx"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage", "cloud"],
+            "protocoles": ["vst"]
+        }
+    },
+    {
+        "Nom": "Dragonframe",
+        "Domaines": ["2D", "Vidéo"],
+        "Etapes": ["Animation"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "340€",
+        "Typologie": "Logiciel local",
+        "url": "https://www.dragonframe.com/",
+        "formats": {
+            "import": ["jpg", "jpeg", "png", "tiff", "raw", "cr2", "nef", "arw"],
+            "export": ["mov", "mp4", "png", "jpg", "tiff"],
+            "build": [],
+            "natif": ["dgf"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": ["dmx"]
+        }
+    },
+    {
+        "Nom": "Point carre",
+        "Domaines": ["2D", "Bitmap"],
+        "Etapes": ["Illustration"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": "De 2000 à 12000€",
+        "Typologie": "Logiciel local",
+        "url": "https://www.pointcarre.com/fr/",
+        "formats": {
+            "import": ["png", "jpg", "bmp", "tiff"],
+            "export": ["png", "jpg", "bmp", "tiff", "pdf"],
+            "build": [],
+            "natif": []
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Affinity by Canva",
+        "Domaines": ["2D", "Bitmap", "Photo", "Vectoriel", "Publication"],
+        "Etapes": ["Retouche", "Illustration", "PAO"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": ["inscription requise", "gratuit limité", "pro 110€/an", "pro+ 160€/an"],
+        "Typologie": "Logiciel local",
+        "url": "https://www.affinity.studio/fr_fr",
+        "formats": {
+            "import": ["afphoto", "afdesign", "afpub", "psd", "ai", "pdf", "eps", "svg", "png", "jpg", "tiff", "gif", "raw", "indd"],
+            "export": ["afphoto", "afdesign", "afpub", "psd", "pdf", "eps", "svg", "png", "jpg", "tiff", "gif"],
+            "build": [],
+            "natif": ["afphoto", "afdesign", "afpub"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Adobe Illustrator",
+        "Domaines": ["2D", "Vectoriel"],
+        "Etapes": ["Illustration"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": "26,21€/mois",
+        "Typologie": "Logiciel cloud",
+        "url": "https://www.adobe.com/products/illustrator.html",
+        "formats": {
+            "import": ["ai", "svg", "pdf", "eps", "png", "jpg", "tiff", "bmp", "gif", "psd", "dwg", "dxf"],
+            "export": ["ai", "svg", "pdf", "eps", "png", "jpg", "tiff", "dwg", "dxf"],
+            "build": [],
+            "natif": ["ai"]
+        },
+        "collaboration": {
+            "type": ["cloud"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Tiled",
+        "Domaines": ["Jeux vidéo", "2D"],
+        "Etapes": ["Illustration"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://www.mapeditor.org/",
+        "formats": {
+            "import": ["tmx", "tsx", "json", "png", "jpg", "bmp"],
+            "export": ["tmx", "json", "csv", "png", "lua"],
+            "build": [],
+            "natif": ["tmx", "tsx"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Max/MSP",
+        "Domaines": ["Son", "Musique", "Interactif", "Programmation"],
+        "Etapes": ["Generative", "Interaction", "Temps réel", "MAO", "Diffusion"],
+        "Interface": "graphique, nodale",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": "399€",
+        "Typologie": "Logiciel local",
+        "url": "https://cycling74.com/",
+        "formats": {
+            "import": ["wav", "aiff", "mp3", "mid", "json", "txt"],
+            "export": ["wav", "aiff", "mid"],
+            "build": [],
+            "natif": ["maxpat", "maxhelp"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": ["osc", "midi", "jack"]
+        }
+    },
+    {
+        "Nom": "Cables.gl",
+        "Domaines": ["Interactif", "Vidéo", "Son", "Programmation"],
+        "Etapes": ["Generative", "Interaction", "Temps réel", "Diffusion"],
+        "Interface": "graphique, nodale",
+        "Plateforme": ["Windows", "MacOS", "Linux", "Navigateur"],
+        "Prix licence": "libre",
+        "Typologie": ["Logiciel local", "Navigateur"],
+        "url": "https://cables.gl/",
+        "formats": {
+            "import": ["png", "jpg", "svg", "gltf", "glb", "obj", "mp3", "wav", "mp4", "json"],
+            "export": ["html", "json"],
+            "build": [],
+            "natif": []
+        },
+        "collaboration": {
+            "type": ["cloud", "temps-reel"],
+            "protocoles": ["osc", "midi"]
+        }
+    },
+    {
+        "Nom": "TouchDesigner",
+        "Domaines": ["Interactif", "Vidéo", "Son"],
+        "Etapes": ["Generative", "Interaction", "Temps réel", "Diffusion"],
+        "Interface": "graphique, nodale",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": ["Educ 300$", "Commercial 600$", "Pro 2200$"],
+        "Typologie": "Logiciel local",
+        "url": "https://derivative.ca/",
+        "formats": {
+            "import": ["fbx", "obj", "gltf", "glb", "png", "jpg", "tiff", "exr", "hdr", "mov", "mp4", "wav", "mp3"],
+            "export": ["mov", "mp4", "png", "tiff", "exr"],
+            "build": [],
+            "natif": ["toe", "tox"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": ["osc", "midi", "ndi", "spout", "syphon", "artnet", "dmx"]
+        }
+    },
+    {
+        "Nom": "Coollab",
+        "Domaines": ["Interactif", "Vidéo", "Son"],
+        "Etapes": ["Generative", "Interaction", "Temps réel", "Diffusion"],
+        "Interface": "graphique, nodale",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://coollab-art.com/",
+        "formats": {
+            "import": ["png", "jpg", "mp4", "wav"],
+            "export": ["png", "jpg", "mp4"],
+            "build": [],
+            "natif": ["coollab"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": ["osc", "midi"]
+        }
+    },
+    {
+        "Nom": "DarkTable",
+        "Domaines": ["2D", "Bitmap", "Photo"],
+        "Etapes": ["Retouche"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://www.darktable.org/",
+        "formats": {
+            "import": ["raw", "cr2", "cr3", "nef", "arw", "orf", "rw2", "dng", "tiff", "jpg", "png", "exr"],
+            "export": ["tiff", "jpg", "png", "exr", "webp"],
+            "build": [],
+            "natif": ["xmp"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Eagle",
+        "Domaines": ["Electronique", "2D"],
+        "Etapes": ["CAD"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": "85$/mois",
+        "Typologie": "Logiciel local",
+        "url": "https://www.autodesk.com/ca-fr/products/eagle/overview",
+        "formats": {
+            "import": ["brd", "sch", "lbr", "dxf", "drl"],
+            "export": ["brd", "sch", "gerber", "dxf", "pdf", "png", "bom"],
+            "build": [],
+            "natif": ["brd", "sch"]
+        },
+        "collaboration": {
+            "type": ["cloud"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "KiCad",
+        "Domaines": ["Electronique", "2D"],
+        "Etapes": ["CAD"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://kicad.org/",
+        "formats": {
+            "import": ["kicad_pcb", "kicad_sch", "dxf", "step", "eagle"],
+            "export": ["kicad_pcb", "kicad_sch", "gerber", "dxf", "step", "pdf", "svg", "png", "bom"],
+            "build": [],
+            "natif": ["kicad_pcb", "kicad_sch", "kicad_pro"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage", "versioning"],
+            "protocoles": ["git"]
+        }
+    },
+    {
+        "Nom": "Millumin",
+        "Domaines": ["Interactif", "Vidéo", "Son"],
+        "Etapes": ["Generative", "Interaction", "Temps réel", "Diffusion"],
+        "Interface": "graphique, timeline",
+        "Plateforme": ["MacOS"],
+        "Prix licence": "399€",
+        "Typologie": "logiciel local",
+        "url": "https://www.millumin.com/",
+        "formats": {
+            "import": ["mov", "mp4", "png", "jpg", "tiff", "hap", "wav", "aiff", "mp3"],
+            "export": ["mov", "mp4"],
+            "build": [],
+            "natif": ["millumin"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": ["osc", "midi", "ndi", "syphon", "artnet", "dmx"]
+        }
+    },
+    {
+        "Nom": "Chataigne",
+        "Domaines": ["Interactif", "Programmation"],
+        "Etapes": ["Automatisation", "Interaction", "Temps réel"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "logiciel local",
+        "url": "https://benjamin.kuperberg.fr/chataigne/",
+        "formats": {
+            "import": ["json"],
+            "export": ["json"],
+            "build": [],
+            "natif": ["noisette"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": ["osc", "midi", "artnet", "dmx"]
+        }
+    },
+    {
+        "Nom": "Ossia score",
+        "Domaines": ["Interactif", "Son", "Musique"],
+        "Etapes": ["Generative", "Interaction", "Temps réel", "Diffusion"],
+        "Interface": "graphique, timeline",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "logiciel local",
+        "url": "https://ossia.io/",
+        "formats": {
+            "import": ["json"],
+            "export": ["json"],
+            "build": [],
+            "natif": ["score"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": ["osc", "midi"]
+        }
+    },
+    {
+        "Nom": "Mad Mapper",
+        "Domaines": ["Interactif", "Vidéo"],
+        "Etapes": ["Interaction", "Temps réel", "Diffusion"],
+        "Interface": "graphique",
+        "Plateforme": ["MacOS"],
+        "Prix licence": ["44€/mois", "459€/2 computers"],
+        "Typologie": "logiciel local",
+        "url": "https://madmapper.com/",
+        "formats": {
+            "import": ["mov", "mp4", "png", "jpg", "hap", "wav", "mp3"],
+            "export": ["mov", "mp4"],
+            "build": [],
+            "natif": ["madmapper"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": ["osc", "midi", "ndi", "syphon", "artnet", "dmx"]
+        }
+    },
+    {
+        "Nom": "Module8",
+        "Domaines": ["Interactif", "Vidéo"],
+        "Etapes": ["Interaction", "Temps réel", "Diffusion"],
+        "Interface": "graphique",
+        "Plateforme": ["MacOS"],
+        "Prix licence": "299€/2computers",
+        "Typologie": "logiciel local",
+        "url": "https://www.garagecube.com/modul8-v2/",
+        "formats": {
+            "import": ["mov", "mp4", "png", "jpg", "gif"],
+            "export": ["mov"],
+            "build": [],
+            "natif": []
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": ["osc", "midi", "syphon"]
+        }
+    },
+    {
+        "Nom": "Resolume",
+        "Domaines": ["Interactif", "Vidéo"],
+        "Etapes": ["Interaction", "Temps réel", "Diffusion"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": ["299€ Avenue", "799€ Arena"],
+        "Typologie": "logiciel local",
+        "url": "https://resolume.com/",
+        "formats": {
+            "import": ["mov", "mp4", "png", "jpg", "gif", "hap", "wav", "mp3"],
+            "export": ["mov", "mp4"],
+            "build": [],
+            "natif": ["avc"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": ["osc", "midi", "ndi", "spout", "syphon", "artnet", "dmx"]
+        }
+    },
+    {
+        "Nom": "vvvv",
+        "Domaines": ["Interactif", "Vidéo", "Programmation"],
+        "Etapes": ["Generative", "Interaction", "Temps réel", "Diffusion"],
+        "Interface": "graphique, nodale",
+        "Plateforme": ["Windows"],
+        "Prix licence": "Education 270€, Permanant 500€",
+        "Typologie": "logiciel local",
+        "url": "https://visualprogramming.net/",
+        "formats": {
+            "import": ["fbx", "obj", "gltf", "glb", "png", "jpg", "svg", "mov", "mp4", "wav"],
+            "export": ["png", "jpg", "mp4"],
+            "build": [],
+            "natif": ["vl"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": ["osc", "midi", "ndi", "spout", "artnet", "dmx"]
+        }
+    },
+    {
+        "Nom": "Orca slicer",
+        "Domaines": ["3D"],
+        "Etapes": ["Impression 3D"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "logiciel local",
+        "url": "https://github.com/SoftFever/OrcaSlicer",
+        "formats": {
+            "import": ["stl", "obj", "3mf", "amf", "step"],
+            "export": [],
+            "build": ["gcode"],
+            "natif": []
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Ultimaker Cura",
+        "Domaines": ["3D"],
+        "Etapes": ["Impression 3D"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "logiciel local",
+        "url": "https://ultimaker.com/software/ultimaker-cura/",
+        "formats": {
+            "import": ["stl", "obj", "3mf", "amf", "x3d", "ply"],
+            "export": [],
+            "build": ["gcode"],
+            "natif": []
+        },
+        "collaboration": {
+            "type": ["cloud"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Prusa Slic3r",
+        "Domaines": ["3D"],
+        "Etapes": ["Impression 3D"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "logiciel local",
+        "url": "https://github.com/prusa3d/PrusaSlicer",
+        "formats": {
+            "import": ["stl", "obj", "3mf", "amf", "step"],
+            "export": [],
+            "build": ["gcode"],
+            "natif": []
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Open Brodcast Studio",
+        "Domaines": ["Vidéo"],
+        "Etapes": ["Diffusion", "Compositing", "Temps réel"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "logiciel local",
+        "url": "https://obsproject.com/",
+        "formats": {
+            "import": ["mp4", "mov", "png", "jpg", "gif", "mp3", "wav"],
+            "export": ["mp4", "mkv", "flv", "mov", "ts"],
+            "build": [],
+            "natif": ["json"]
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": ["ndi", "spout", "syphon"]
+        }
+    },
+    {
+        "Nom": "Miro",
+        "Domaines": ["Organisation"],
+        "Etapes": ["Diagrammes", "Schémas", "Collaboration"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": ["gratuit limité", "8$/mois starter", "16$/mois business"],
+        "Typologie": "cloud",
+        "url": "https://miro.com/",
+        "formats": {
+            "import": ["png", "jpg", "pdf", "csv"],
+            "export": ["png", "jpg", "pdf", "csv"],
+            "build": [],
+            "natif": null
+        },
+        "collaboration": {
+            "type": ["temps-reel", "cloud"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Excalidraw",
+        "Domaines": ["2D", "Vectoriel"],
+        "Etapes": ["Schémas", "Diagrammes", "Collaboration"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux", "Navigateur"],
+        "Prix licence": "libre",
+        "Typologie": "cloud",
+        "url": "https://excalidraw.com/",
+        "formats": {
+            "import": ["excalidraw", "png"],
+            "export": ["excalidraw", "png", "svg"],
+            "build": [],
+            "natif": ["excalidraw"]
+        },
+        "collaboration": {
+            "type": ["temps-reel", "cloud"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Drawio",
+        "Domaines": ["2D", "Vectoriel"],
+        "Etapes": ["Schémas", "Diagrammes", "Collaboration"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "cloud, local, format .drawio",
+        "url": "https://www.drawio.com/",
+        "formats": {
+            "import": ["drawio", "xml", "vsdx", "gliffy"],
+            "export": ["drawio", "xml", "png", "svg", "pdf", "html"],
+            "build": [],
+            "natif": ["drawio"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage", "cloud"],
+            "protocoles": ["git"]
+        }
+    },
+    {
+        "Nom": "Adobe After Effect",
+        "Domaines": ["Vidéo"],
+        "Etapes": ["Compositing", "Animation"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": "26,21 € / mois",
+        "Typologie": "Logiciel local",
+        "url": "https://www.adobe.com/fr/products/aftereffects.html",
+        "formats": {
+            "import": ["aep", "mp4", "mov", "avi", "png", "jpg", "tiff", "psd", "ai", "exr", "dpx", "wav", "mp3"],
+            "export": ["mp4", "mov", "avi", "png", "jpg", "tiff", "exr", "gif"],
+            "build": [],
+            "natif": ["aep"]
+        },
+        "collaboration": {
+            "type": ["cloud"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Gyroflow",
+        "Domaines": ["Vidéo"],
+        "Etapes": ["Retouche"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://gyroflow.xyz/",
+        "formats": {
+            "import": ["mp4", "mov", "avi", "mxf", "braw"],
+            "export": ["mp4", "mov"],
+            "build": [],
+            "natif": ["gyroflow"]
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Stable Diffusion",
+        "Domaines": ["IA", "2D"],
+        "Etapes": ["Generative"],
+        "Interface": ["ligne de commande", "Navigateur"],
+        "Plateforme": ["Windows", "MacOS", "Linux", "Navigateur"],
+        "Prix licence": "Open source",
+        "Typologie": ["Logiciel local", "Navigateur"],
+        "url": "https://stablediffusionWeb.com/fr",
+        "formats": {
+            "import": ["png", "jpg"],
+            "export": ["png", "jpg"],
+            "build": [],
+            "natif": []
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": ["api-rest"]
+        }
+    },
+    {
+        "Nom": "Ollama",
+        "Domaines": ["IA"],
+        "Etapes": ["LLM", "Traitement de masse"],
+        "Interface": "ligne de commande",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "Open source",
+        "Typologie": "Logiciel local",
+        "url": "https://ollama.com/",
+        "formats": {
+            "import": ["gguf", "safetensors"],
+            "export": ["gguf"],
+            "build": [],
+            "natif": ["modelfile"]
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": ["api-rest"]
+        }
+    },
+    {
+        "Nom": "Apertus",
+        "Domaines": ["IA"],
+        "Etapes": ["LLM", "Fine tunning"],
+        "Interface": "ligne de commande",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://apertus.click/",
+        "formats": {
+            "import": ["gguf", "safetensors"],
+            "export": ["gguf"],
+            "build": [],
+            "natif": []
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Olmo",
+        "Domaines": ["IA"],
+        "Etapes": ["LLM", "Fine tunning"],
+        "Interface": "ligne de commande",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://allenai.org/",
+        "formats": {
+            "import": ["safetensors", "json"],
+            "export": ["safetensors", "json"],
+            "build": [],
+            "natif": []
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Open WebUI",
+        "Domaines": ["IA"],
+        "Etapes": ["LLM", "Interaction"],
+        "Interface": ["ligne de commande", "Navigateur"],
+        "Plateforme": ["Windows", "MacOS", "Linux", "Navigateur"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://openWebui.com/",
+        "formats": {
+            "import": ["txt", "pdf", "md", "json"],
+            "export": ["txt", "md", "json"],
+            "build": [],
+            "natif": []
+        },
+        "collaboration": {
+            "type": ["cloud"],
+            "protocoles": ["api-rest"]
+        }
+    },
+    {
+        "Nom": "ComfyUI",
+        "Domaines": ["IA", "2D"],
+        "Etapes": ["Generative", "Automatisation"],
+        "Interface": ["ligne de commande", "Navigateur"],
+        "Plateforme": ["Windows", "MacOS", "Linux", "Navigateur"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://comfyui.org/en/what-is-comfyui",
+        "formats": {
+            "import": ["png", "jpg", "json"],
+            "export": ["png", "jpg", "gif", "mp4"],
+            "build": [],
+            "natif": ["json"]
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": ["api-rest"]
+        }
+    },
+    {
+        "Nom": "Unsloth",
+        "Domaines": ["IA"],
+        "Etapes": ["Fine tunning"],
+        "Interface": ["ligne de commande"],
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://unsloth.ai/",
+        "formats": {
+            "import": ["safetensors", "json", "jsonl", "csv"],
+            "export": ["safetensors", "gguf"],
+            "build": [],
+            "natif": []
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "FontForge",
+        "Domaines": ["Typographie"],
+        "Etapes": ["Typographie"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://fontforge.org/",
+        "formats": {
+            "import": ["otf", "ttf", "woff", "woff2", "svg", "sfd", "ufo", "pfb", "pfa", "bdf"],
+            "export": ["otf", "ttf", "woff", "woff2", "svg", "sfd", "ufo", "eot"],
+            "build": [],
+            "natif": ["sfd"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "MeshLab",
+        "Domaines": ["3D"],
+        "Etapes": ["Modélisation", "Photogramétrie"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://www.meshlab.net/",
+        "formats": {
+            "import": ["ply", "stl", "obj", "3ds", "dae", "off", "xyz", "pts", "gltf", "glb", "e57", "las"],
+            "export": ["ply", "stl", "obj", "3ds", "dae", "off", "xyz", "gltf", "glb"],
+            "build": [],
+            "natif": ["mlp"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "OpenSCAD",
+        "Domaines": ["3D", "Programmation"],
+        "Etapes": ["Modélisation", "CAD", "Generative", "Paramétrique"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://openscad.org/",
+        "formats": {
+            "import": ["stl", "off", "dxf", "svg", "csg"],
+            "export": ["stl", "off", "dxf", "svg", "amf", "3mf", "csg", "png"],
+            "build": [],
+            "natif": ["scad"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage", "versioning"],
+            "protocoles": ["git"]
+        }
+    },
+    {
+        "Nom": "p5.js",
+        "Domaines": ["Programmation", "2D", "Interactif"],
+        "Etapes": ["Generative", "Interaction"],
+        "Interface": "Navigateur",
+        "Plateforme": ["Windows", "MacOS", "Linux", "Navigateur"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://p5js.org/",
+        "formats": {
+            "import": ["png", "jpg", "gif", "svg", "json", "csv", "txt", "obj", "mp3", "wav"],
+            "export": ["png", "jpg", "gif", "svg", "json"],
+            "build": [],
+            "natif": ["js"]
+        },
+        "collaboration": {
+            "type": ["cloud"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Reaper",
+        "Domaines": ["Son", "Musique"],
+        "Etapes": ["MAO", "Mixage", "Mastering"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": ["60$ discount", "225$ commercial"],
+        "Typologie": "Logiciel local",
+        "url": "https://www.reaper.fm/",
+        "formats": {
+            "import": ["wav", "aiff", "flac", "mp3", "ogg", "mid", "midi", "aac"],
+            "export": ["wav", "aiff", "flac", "mp3", "ogg", "mid"],
+            "build": [],
+            "natif": ["rpp"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": ["vst", "lv2", "jack"]
+        }
+    },
+    {
+        "Nom": "VCV",
+        "Domaines": ["Son", "Musique"],
+        "Etapes": ["MAO", "Generative", "Temps réel"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://vcvrack.com/",
+        "formats": {
+            "import": ["wav"],
+            "export": ["wav"],
+            "build": [],
+            "natif": ["vcv"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": ["midi", "jack"]
+        }
+    },
+    {
+        "Nom": "SuperCollider",
+        "Domaines": ["Son", "Musique", "Programmation"],
+        "Etapes": ["Generative", "Temps réel", "MAO"],
+        "Interface": ["graphique", "Programmation"],
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://supercollider.github.io/",
+        "formats": {
+            "import": ["wav", "aiff", "flac"],
+            "export": ["wav", "aiff"],
+            "build": [],
+            "natif": ["scd"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": ["osc", "midi", "jack"]
+        }
+    },
+    {
+        "Nom": "Orca",
+        "Domaines": ["Son", "Musique", "Programmation"],
+        "Etapes": ["Generative", "Temps réel"],
+        "Interface": ["ligne de commande", "Programmation"],
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://100r.co/site/orca.html",
+        "formats": {
+            "import": [],
+            "export": [],
+            "build": [],
+            "natif": ["orca"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": ["osc", "midi"]
+        }
+    },
+    {
+        "Nom": "TidalCycles",
+        "Domaines": ["Son", "Musique", "Programmation"],
+        "Etapes": ["Generative", "Temps réel"],
+        "Interface": ["graphique", "IDE", "Programmation"],
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://tidalcycles.org/",
+        "formats": {
+            "import": ["wav", "flac", "aiff"],
+            "export": [],
+            "build": [],
+            "natif": ["tidal"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": ["osc", "midi", "jack"]
+        }
+    },
+    {
+        "Nom": "Sonic Pi",
+        "Domaines": ["Son", "Musique", "Programmation"],
+        "Etapes": ["Generative", "Temps réel"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://sonic-pi.net/",
+        "formats": {
+            "import": ["wav", "flac", "aiff"],
+            "export": ["wav"],
+            "build": [],
+            "natif": ["rb"]
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": ["osc", "midi"]
+        }
+    },
+    {
+        "Nom": "Audacity",
+        "Domaines": ["Son", "Musique"],
+        "Etapes": ["MAO", "Mixage"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://audacity.fr/",
+        "formats": {
+            "import": ["wav", "aiff", "mp3", "ogg", "flac", "aac", "wma", "mid"],
+            "export": ["wav", "aiff", "mp3", "ogg", "flac", "aac"],
+            "build": [],
+            "natif": ["aup3"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "OpenToonz",
+        "Domaines": ["2D"],
+        "Etapes": ["Animation", "Illustration"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS"],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://opentoonz.github.io/",
+        "formats": {
+            "import": ["png", "jpg", "tiff", "tga", "bmp", "gif", "psd", "svg", "mov", "mp4", "avi"],
+            "export": ["png", "jpg", "tiff", "tga", "gif", "mov", "mp4", "avi", "spritesheet"],
+            "build": [],
+            "natif": ["tnz"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage"],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Obsidian",
+        "Domaines": ["Texte", "Organisation"],
+        "Etapes": ["Ecriture", "Collaboration", "Organisation", "Diagrammes"],
+        "Interface": "texte",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": ["4$/mois sync", "8$/mois publish"],
+        "Typologie": "Logiciel local",
+        "url": "https://obsidian.md/",
+        "formats": {
+            "import": ["md", "txt", "pdf", "png", "jpg", "gif", "csv"],
+            "export": ["md", "pdf"],
+            "build": [],
+            "natif": ["md"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage", "cloud"],
+            "protocoles": ["git"]
+        }
+    },
+    {
+        "Nom": "Notion",
+        "Domaines": ["Organisation", "Texte"],
+        "Etapes": ["Ecriture", "Collaboration", "Organisation", "Diagrammes"],
+        "Interface": "texte",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": ["gratuit limité", "9,50€/mois Plus", "19,50$/mois business"],
+        "Typologie": "Logiciel local",
+        "url": "https://www.notion.so/",
+        "formats": {
+            "import": ["md", "html", "csv", "docx", "txt"],
+            "export": ["md", "html", "csv", "pdf"],
+            "build": [],
+            "natif": null
+        },
+        "collaboration": {
+            "type": ["temps-reel", "cloud"],
+            "protocoles": ["api-rest"]
+        }
+    },
+    {
+        "Nom": "Overleaf",
+        "Domaines": ["Texte", "Publication"],
+        "Etapes": ["Ecriture", "Collaboration"],
+        "Interface": "Navigateur",
+        "Plateforme": ["Navigateur"],
+        "Prix licence": "freemium",
+        "Typologie": "Logiciel local",
+        "url": "https://www.overleaf.com/",
+        "formats": {
+            "import": ["tex", "bib", "png", "jpg", "pdf", "eps", "svg"],
+            "export": ["pdf", "tex", "zip"],
+            "build": [],
+            "natif": ["tex"]
+        },
+        "collaboration": {
+            "type": ["temps-reel", "cloud", "versioning"],
+            "protocoles": ["git"]
+        }
+    },
+    {
+        "Nom": "Glyph",
+        "Domaines": ["Typographie"],
+        "Etapes": ["Typographie"],
+        "Interface": "graphique",
+        "Plateforme": ["MacOS"],
+        "Prix licence": ["Glyphs 3 : 299€", "Glyphs mini 2 : 49€"],
+        "Typologie": "Logiciel local",
+        "url": "https://glyphsapp.com//",
+        "formats": {
+            "import": ["otf", "ttf", "ufo", "glyphs", "glyphx"],
+            "export": ["otf", "ttf", "ufo", "woff", "woff2"],
+            "build": [],
+            "natif": ["glyphs", "glyphx"]
+        },
+        "collaboration": {
+            "type": ["fichier-partage", "versioning"],
+            "protocoles": ["git"]
+        }
+    },
+    {
+        "Nom": "FontBase",
+        "Domaines": ["Typographie"],
+        "Etapes": ["Organisation"],
+        "Interface": "graphique",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "freemium",
+        "Typologie": "Logiciel local",
+        "url": "https://fontba.se/",
+        "formats": {
+            "import": ["otf", "ttf", "woff", "woff2"],
+            "export": [],
+            "build": [],
+            "natif": []
+        },
+        "collaboration": {
+            "type": [],
+            "protocoles": []
+        }
+    },
+    {
+        "Nom": "Hugo",
+        "Domaines": ["Web", "Publication"],
+        "Etapes": ["Formatage", "Automatisation", "Diffusion"],
+        "Interface": "ligne de commande",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Générateur de site statique (SSG) écrit en Go",
+        "url": "https://gohugo.io/",
+        "formats": {
+            "import": ["md", "html", "json", "toml", "yaml"],
+            "export": [],
+            "build": ["html", "css", "js"],
+            "natif": []
+        },
+        "collaboration": {
+            "type": ["versioning"],
+            "protocoles": ["git"]
+        }
+    },
+    {
+        "Nom": "Jekyll",
+        "Domaines": ["Web", "Publication"],
+        "Etapes": ["Formatage", "Automatisation", "Diffusion"],
+        "Interface": "ligne de commande",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Générateur de site statique (SSG)",
+        "url": "https://jekyllrb.com/",
+        "formats": {
+            "import": ["md", "html", "yaml", "yml", "json", "csv"],
+            "export": [],
+            "build": ["html", "css", "js"],
+            "natif": []
+        },
+        "collaboration": {
+            "type": ["versioning"],
+            "protocoles": ["git"]
+        }
+    },
+    {
+        "Nom": "Gridsome",
+        "Domaines": ["Web", "Publication"],
+        "Etapes": ["Formatage", "Automatisation", "Diffusion"],
+        "Interface": "ligne de commande",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Générateur de site statique (SSG) basé sur l'architecture JAMStack. Compatible avec les formatages (templating) Vue.js",
+        "url": "https://gridsome.org/",
+        "formats": {
+            "import": ["md", "html", "json", "yaml", "csv", "vue"],
+            "export": [],
+            "build": ["html", "css", "js"],
+            "natif": []
+        },
+        "collaboration": {
+            "type": ["versioning"],
+            "protocoles": ["git"]
+        }
+    },
+    {
+        "Nom": "Astro",
+        "Domaines": ["Web", "Publication"],
+        "Etapes": ["Formatage", "Automatisation", "Diffusion"],
+        "Interface": "ligne de commande",
+        "Plateforme": ["Windows", "MacOS", "Linux"],
+        "Prix licence": "libre",
+        "Typologie": "Framework for content-driven websites",
+        "url": "https://astro.build/",
+        "formats": {
+            "import": ["md", "mdx", "html", "json", "yaml", "astro"],
+            "export": [],
+            "build": ["html", "css", "js"],
+            "natif": ["astro"]
+        },
+        "collaboration": {
+            "type": ["versioning"],
+            "protocoles": ["git"]
+        }
+    }
+]

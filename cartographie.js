@@ -13,7 +13,6 @@ var zoomBehavior;
 
 var COLORS = {
     'Image 2D':            '#e05252',
-    'Typographie':         '#e8913a',
     'Audio':               '#d4c94e',
     'Vidéo':               '#6bbf59',
     '3D':                  '#45b8a0',
@@ -48,22 +47,28 @@ function linkId(endpoint) {
 
 function buildTagToCategory(tags) {
     var map = {};
-    for (var cat in tags) {
-        tags[cat].forEach(function(t) { map[t] = cat; });
-    }
+    var sections = ['domaines', 'etapes'];
+    sections.forEach(function(section) {
+        for (var cat in (tags[section] || {})) {
+            tags[section][cat].forEach(function(t) { map[t] = cat; });
+        }
+    });
     return map;
 }
 
 function makeSoftwareNode(log, tags) {
+    var allTags = getAllTags(log);
     return {
         id: 'soft_' + log.Nom,
         label: log.Nom,
         type: 'software',
         licence: isFreeLicence(log["Prix licence"]) ? 'libre' : 'privateur',
         platforms: log.Plateforme || [],
-        category: determinePrimaryCategory(log.Usages, tags),
-        usageCount: (log.Usages || []).length,
-        usages: log.Usages || [],
+        category: determinePrimaryCategory(log, tags),
+        usageCount: allTags.length,
+        domaines: log.Domaines || [],
+        etapes: log.Etapes || [],
+        allTags: allTags,
         url: log.url || '',
         description: log.Description || ''
     };
@@ -73,8 +78,8 @@ function buildSharedTagLinks(softwareList, minShared) {
     var links = [];
     for (var i = 0; i < softwareList.length; i++) {
         for (var j = i + 1; j < softwareList.length; j++) {
-            var setA = new Set(softwareList[i].Usages || []);
-            var setB = new Set(softwareList[j].Usages || []);
+            var setA = new Set(getAllTags(softwareList[i]));
+            var setB = new Set(getAllTags(softwareList[j]));
             var shared = [];
             setA.forEach(function(u) { if (setB.has(u)) shared.push(u); });
             if (shared.length >= minShared) {
@@ -112,7 +117,7 @@ var graphBuilders = {
 
         data.logiciels.forEach(function(log) {
             nodes.push(makeSoftwareNode(log, data.tags));
-            (log.Usages || []).forEach(function(tag) {
+            getAllTags(log).forEach(function(tag) {
                 tagSet.add(tag);
                 links.push({ source: 'soft_' + log.Nom, target: 'tag_' + tag, weight: 1 });
             });
@@ -138,7 +143,7 @@ var graphBuilders = {
         var tagFreq = {};
 
         data.logiciels.forEach(function(log) {
-            (log.Usages || []).forEach(function(u) {
+            getAllTags(log).forEach(function(u) {
                 allTags.add(u);
                 tagFreq[u] = (tagFreq[u] || 0) + 1;
             });
@@ -156,7 +161,7 @@ var graphBuilders = {
             for (var j = i + 1; j < tagsArr.length; j++) {
                 var coCount = 0;
                 data.logiciels.forEach(function(log) {
-                    var u = log.Usages || [];
+                    var u = getAllTags(log);
                     if (u.includes(tagsArr[i]) && u.includes(tagsArr[j])) coCount++;
                 });
                 if (coCount > 0) {
@@ -419,7 +424,8 @@ function setupTooltips(nodeSelection, linkSelection) {
 function softwareTooltipHtml(d) {
     var html = '<div class="tooltip-nom">' + d.label + '</div>';
     html += '<div class="tooltip-licence">' + (d.licence === 'libre' ? 'Free' : 'Proprietary') + '</div>';
-    html += '<div class="tooltip-tags">' + (d.usages || []).join(', ') + '</div>';
+    html += '<div class="tooltip-tags">' + (d.domaines || []).join(', ') + '</div>';
+    html += '<div class="tooltip-tags" style="font-style:italic">' + (d.etapes || []).join(', ') + '</div>';
     if (d.description) {
         var desc = d.description.length > 150 ? d.description.substring(0, 150) + '...' : d.description;
         html += '<div class="tooltip-description">' + desc + '</div>';
@@ -520,7 +526,7 @@ function showInfoPanel(d) {
     if (d.type === 'tag') {
         var tagName = d.label;
         var software = database.logiciels.filter(function(log) {
-            return (log.Usages || []).includes(tagName);
+            return getAllTags(log).includes(tagName);
         });
         var html = '<h4>' + tagName + '</h4>';
         html += '<div style="font-size:11px;margin-bottom:6px">' + software.length + ' software</div>';
@@ -542,9 +548,9 @@ function showInfoPanel(d) {
     if (d.url) html += '<a href="' + d.url + '" target="_blank">Website</a><br>';
     html += '<div style="margin-top:4px;font-size:11px">' +
         (d.licence === 'libre' ? 'Free' : 'Proprietary') + '</div>';
-    if (d.usages && d.usages.length > 0) {
+    if (d.allTags && d.allTags.length > 0) {
         html += '<div class="info-tags">';
-        d.usages.forEach(function(t) { html += '<span class="info-tag">' + t + '</span>'; });
+        d.allTags.forEach(function(t) { html += '<span class="info-tag">' + t + '</span>'; });
         html += '</div>';
     }
     if (d.description) {

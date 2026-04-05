@@ -1,0 +1,216 @@
+/* Override carto-main for pipeline scroll */
+.pipeline-view-wrapper {
+    min-width: 0;
+    overflow: hidden;
+}
+
+/* Pipeline layout */
+.pipeline-view {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    height: 100%;
+    overflow-x: auto;
+    padding: 24px 28px;
+}
+
+.pipeline-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--text-muted);
+    font-size: 16px;
+    padding: 20px;
+}
+
+/* Pipeline stage column */
+.pipeline-stage {
+    flex: 1;
+    min-width: 180px;
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.stage-header {
+    text-align: center;
+    padding: 10px 8px;
+    background: var(--bg-th);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 6px 6px 0 0;
+}
+
+.stage-body {
+    flex: 1;
+    background: var(--bg-sidebar);
+    border: 1px solid var(--border);
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    padding: 8px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Software card in pipeline */
+.pipeline-card {
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: 2px solid var(--border);
+    background: var(--bg-card);
+    cursor: pointer;
+    transition: 0.15s;
+    position: relative;
+}
+
+.pipeline-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.pipeline-card.selected {
+    border-color: var(--accent);
+    background: var(--bg-input-hover);
+    box-shadow: 0 0 0 2px var(--accent);
+}
+
+.pipeline-card.compatible-high {
+    border-left: 4px solid #22c55e;
+}
+
+.pipeline-card.compatible-mid {
+    border-left: 4px solid #f59e0b;
+}
+
+.pipeline-card.compatible-low {
+    border-left: 4px solid #ef4444;
+}
+
+.card-nom {
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.card-licence {
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.card-licence.libre {
+    background: #dcfce7;
+    color: #166534;
+}
+
+[data-theme="dark"] .card-licence.libre {
+    background: #14532d;
+    color: #86efac;
+}
+
+.card-licence.proprio {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+[data-theme="dark"] .card-licence.proprio {
+    background: #78350f;
+    color: #fcd34d;
+}
+
+.card-formats {
+    font-size: 10px;
+    color: var(--text-faint);
+    margin-top: 4px;
+    line-height: 1.3;
+}
+
+.card-score {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-muted);
+}
+
+/* Arrow between stages */
+.pipeline-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    min-width: 40px;
+    color: var(--text-faint);
+    font-size: 24px;
+    user-select: none;
+}
+
+/* Compat info panel */
+.compat-info {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.compat-info .text-muted {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.compat-pair {
+    margin-bottom: 8px;
+    padding: 6px 8px;
+    background: var(--bg-input);
+    border-radius: 4px;
+}
+
+.compat-pair-title {
+    font-weight: 600;
+    font-size: 11px;
+    margin-bottom: 3px;
+}
+
+.compat-bar {
+    height: 6px;
+    border-radius: 3px;
+    background: var(--border);
+    overflow: hidden;
+    margin-bottom: 2px;
+}
+
+.compat-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.3s;
+}
+
+.compat-detail {
+    font-size: 10px;
+    color: var(--text-faint);
+}
+
+/* Pipeline select */
+#pipelineSelect {
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    font-size: 13px;
+    outline: none;
+    background: var(--bg-input);
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+#pipelineSelect:focus {
+    border-color: var(--accent);
+}

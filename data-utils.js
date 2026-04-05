@@ -42,17 +42,26 @@ function isFreeLicence(licencePrice) {
 }
 
 function loadData() {
-    return fetch('https://raw.githubusercontent.com/lan-ensad/art-foss-bdd/refs/heads/main/bdd_soft.json')
-    // return fetch('bdd_soft.json') // Local dev
-        .then(response => response.json());
+    return Promise.all([
+        fetch('data/soft.json').then(r => r.json()),
+        fetch('data/tags.json').then(r => r.json()),
+        fetch('data/pipelines.json').then(r => r.json())
+    ]).then(function([logiciels, tags, pipelines]) {
+        return { logiciels: logiciels, tags: tags, pipelines: pipelines };
+    });
 }
 
-function determinePrimaryCategory(usages, tagsDict) {
-    if (!usages || usages.length === 0) return 'Autre';
-    const catCounts = {};
-    for (const [cat, tags] of Object.entries(tagsDict)) {
-        catCounts[cat] = usages.filter(u => tags.includes(u)).length;
+function determinePrimaryCategory(log, tagsDict) {
+    var domaines = log.Domaines || [];
+    if (domaines.length === 0) return 'Autre';
+    var catCounts = {};
+    for (var cat in (tagsDict.domaines || {})) {
+        catCounts[cat] = domaines.filter(function(d) { return tagsDict.domaines[cat].includes(d); }).length;
     }
-    const sorted = Object.entries(catCounts).sort((a, b) => b[1] - a[1]);
+    var sorted = Object.entries(catCounts).sort(function(a, b) { return b[1] - a[1]; });
     return sorted[0][1] > 0 ? sorted[0][0] : 'Autre';
+}
+
+function getAllTags(log) {
+    return [].concat(log.Domaines || [], log.Etapes || []);
 }

@@ -2,7 +2,8 @@ let database = { tags: {}, logiciels: [] };
 let activeFilters = {
     licence: 'tout',
     platforms: [],
-    usages: []
+    domaines: [],
+    etapes: []
 };
 
 loadData()
@@ -16,6 +17,11 @@ loadData()
     });
 
 // isFreeLicence() is in data-utils.js
+
+// Helper: get all tags (domaines + etapes) for a software entry
+function getAllTags(log) {
+    return [...(log.Domaines || []), ...(log.Etapes || [])];
+}
 
 function renderFilters() {
     renderLicenceFilter();
@@ -71,7 +77,13 @@ function renderTags() {
     const container = document.getElementById('listeTags');
     container.innerHTML = '';
 
-    for (const [category, tags] of Object.entries(database.tags)) {
+    // Domaines section
+    const domTitle = document.createElement('h3');
+    domTitle.textContent = 'Domaines';
+    domTitle.style.cssText = 'margin: 10px 0 8px; font-size: 13px;';
+    container.appendChild(domTitle);
+
+    for (const [category, tags] of Object.entries(database.tags.domaines || {})) {
         const div = document.createElement('div');
         div.className = 'categorie';
 
@@ -89,9 +101,46 @@ function renderTags() {
             btn.onclick = () => {
                 btn.classList.toggle('actif');
                 if (btn.classList.contains('actif')) {
-                    activeFilters.usages.push(tag);
+                    activeFilters.domaines.push(tag);
                 } else {
-                    activeFilters.usages = activeFilters.usages.filter(t => t !== tag);
+                    activeFilters.domaines = activeFilters.domaines.filter(t => t !== tag);
+                }
+                applyAllFilters();
+            };
+            tagsDiv.appendChild(btn);
+        });
+
+        div.appendChild(tagsDiv);
+        container.appendChild(div);
+    }
+
+    // Etapes section
+    const etTitle = document.createElement('h3');
+    etTitle.textContent = 'Étapes';
+    etTitle.style.cssText = 'margin: 18px 0 8px; font-size: 13px; padding-top: 12px; border-top: 1px solid var(--border-light);';
+    container.appendChild(etTitle);
+
+    for (const [category, tags] of Object.entries(database.tags.etapes || {})) {
+        const div = document.createElement('div');
+        div.className = 'categorie';
+
+        const h4 = document.createElement('h4');
+        h4.textContent = category;
+        div.appendChild(h4);
+
+        const tagsDiv = document.createElement('div');
+        tagsDiv.className = 'categorie-tags';
+
+        tags.forEach(tag => {
+            const btn = document.createElement('button');
+            btn.textContent = tag;
+            btn.dataset.tag = tag;
+            btn.onclick = () => {
+                btn.classList.toggle('actif');
+                if (btn.classList.contains('actif')) {
+                    activeFilters.etapes.push(tag);
+                } else {
+                    activeFilters.etapes = activeFilters.etapes.filter(t => t !== tag);
                 }
                 applyAllFilters();
             };
@@ -113,9 +162,12 @@ function displayAll() {
         const row = document.createElement('tr');
         const price = Array.isArray(log["Prix licence"]) ? log["Prix licence"].join(', ') : log["Prix licence"];
         const platforms = log.Plateforme.join(', ');
+        const domaines = (log.Domaines || []).join(', ');
+        const etapes = (log.Etapes || []).join(', ');
         row.innerHTML = `
             <td><a href="${log.url}" target="_blank">${log.Nom}</a></td>
-            <td class="usages-cell">${(log.Usages || []).join(", ")}</td>
+            <td class="usages-cell">${domaines}</td>
+            <td class="usages-cell">${etapes}</td>
             <td>${price || "Unknown"}</td>
             <td>${platforms}</td>
         `;
@@ -145,9 +197,16 @@ function applyAllFilters() {
             if (!matchPlatform) return false;
         }
 
-        // Filter by usages
-        if (activeFilters.usages.length > 0) {
-            if (!log.Usages || !activeFilters.usages.every(tag => log.Usages.includes(tag))) {
+        // Filter by domaines
+        if (activeFilters.domaines.length > 0) {
+            if (!log.Domaines || !activeFilters.domaines.every(tag => log.Domaines.includes(tag))) {
+                return false;
+            }
+        }
+
+        // Filter by etapes
+        if (activeFilters.etapes.length > 0) {
+            if (!log.Etapes || !activeFilters.etapes.every(tag => log.Etapes.includes(tag))) {
                 return false;
             }
         }
@@ -159,9 +218,12 @@ function applyAllFilters() {
         const row = document.createElement('tr');
         const price = Array.isArray(log["Prix licence"]) ? log["Prix licence"].join(', ') : log["Prix licence"];
         const platforms = log.Plateforme.join(', ');
+        const domaines = (log.Domaines || []).join(', ');
+        const etapes = (log.Etapes || []).join(', ');
         row.innerHTML = `
             <td><a href="${log.url}" target="_blank">${log.Nom}</a></td>
-            <td class="usages-cell">${(log.Usages || []).join(", ")}</td>
+            <td class="usages-cell">${domaines}</td>
+            <td class="usages-cell">${etapes}</td>
             <td>${price || "Unknown"}</td>
             <td>${platforms}</td>
         `;

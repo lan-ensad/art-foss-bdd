@@ -1,0 +1,23 @@
+{
+    "domaines": {
+        "Image 2D": ["2D", "Bitmap", "Vectoriel", "Photo"],
+        "Audio": ["Son", "Musique"],
+        "Vidéo": ["Vidéo"],
+        "3D": ["3D"],
+        "Jeux": ["Jeux vidéo"],
+        "Interactif": ["Interactif"],
+        "Programmation": ["Programmation", "Electronique"],
+        "Texte & Publication": ["Texte", "Publication", "Web", "Typographie"],
+        "Design UI/UX": ["UI/UX"],
+        "Organisation": ["Organisation"],
+        "IA": ["IA"]
+    },
+    "etapes": {
+        "Pré-production": ["Ecriture", "Storyboard", "Schémas", "Diagrammes"],
+        "Création": ["Modélisation", "Illustration", "Typographie", "Generative", "Paramétrique", "CAD", "Sculpt"],
+        "Production": ["Animation", "Compositing", "Montage", "MAO", "Texturing", "Moteur de rendu", "Interaction", "Temps réel"],
+        "Post-production": ["Retouche", "Mixage", "Mastering", "Photogramétrie", "Traitement de masse"],
+        "Diffusion": ["Diffusion", "Impression 3D", "PAO", "Formatage", "Export", "Mock-up"],
+        "Support": ["Automatisation", "Collaboration", "Organisation", "LLM", "Fine tunning"]
+    }
+}

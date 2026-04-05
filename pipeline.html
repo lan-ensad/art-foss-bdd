@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Software Pipeline</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cartographie.css">
+    <link rel="stylesheet" href="pipeline.css">
+</head>
+<body>
+    <nav class="nav-principale">
+        <a href="/" class="nav-lien">Home</a>
+        <a href="index.html" class="nav-lien">Table</a>
+        <a href="cartographie.html" class="nav-lien">Cartography</a>
+        <a href="pipeline.html" class="nav-lien actif">Pipeline</a>
+        <span class="nav-spacer"></span>
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme"></button>
+    </nav>
+
+    <div class="carto-container">
+        <aside class="carto-sidebar">
+            <h2>Pipeline</h2>
+
+            <div class="filtre-section">
+                <h3>Workflow</h3>
+                <select id="pipelineSelect">
+                    <option value="">-- Choose a pipeline --</option>
+                </select>
+            </div>
+
+            <div class="filtre-section">
+                <h3>Licence</h3>
+                <div class="filtre-licence">
+                    <button class="filtre-btn actif" data-licence="tout">All</button>
+                    <button class="filtre-btn" data-licence="libre">Free</button>
+                    <button class="filtre-btn" data-licence="privateur">Proprietary</button>
+                </div>
+            </div>
+
+            <div class="filtre-section">
+                <h3>Platform</h3>
+                <div id="filtrePlateformes" class="filtre-plateformes"></div>
+            </div>
+
+            <div class="filtre-section" id="sectionCompat">
+                <h3>Compatibility details</h3>
+                <div id="compatInfo" class="compat-info">
+                    <p class="text-muted">Select a software to see compatibility scores.</p>
+                </div>
+            </div>
+
+            <div id="legende" class="legende"></div>
+        </aside>
+
+        <main class="carto-main pipeline-view-wrapper">
+            <div id="pipelineView" class="pipeline-view">
+                <p class="pipeline-placeholder">Select a workflow to build a pipeline.</p>
+            </div>
+            <div id="tooltip" class="tooltip hidden"></div>
+        </main>
+    </div>
+
+    <script src="data-utils.js"></script>
+    <script src="pipeline.js"></script>
+</body>
+</html>
