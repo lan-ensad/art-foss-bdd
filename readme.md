@@ -1,42 +1,54 @@
 # art-foss-bdd
 
 A database of software tools for art and design. 
-The sorting principle is based on usage. Sorting is done by the presence of certain tags that can be combined.
+The usage-based classification decouples tools from hegemonic companies in specific fields, making it easier to discover alternatives.
 
 [https://lan.ensad.fr/art-foss-bdd/](https://lan.ensad.fr/art-foss-bdd/)
 
 ***
 
-The usage-based classification decouples tools from hegemonic companies in specific fields, making it easier to discover alternatives.
-
 ## Structure
 
 ```
-index.html            Table view (filterable list of software)
-cartographie.html     Network cartography (D3.js graph visualization)
+index.html            Table view (filterable list)
+cartographie.html     Network cartography (D3.js)
+pipeline.html         Pipeline / workflow builder
 app.js                Table page logic
-cartographie.js       Graph engine (affinity, bipartite, clusters, co-occurrence)
-data-utils.js         Shared utilities (data loading, theme toggle, licence detection)
-styles.css            Shared styles + light/dark theme variables
-cartographie.css      Graph page styles
-bdd_soft.json         Software database
+cartographie.js       Graph engine (4 modes)
+pipeline.js           Pipeline engine + compatibility score
+data-utils.js         Shared utilities
+styles.css            Shared styles + light/dark theme
+cartographie.css      Graph styles
+pipeline.css          Pipeline styles
+data/
+  soft.json           Software database (108 entries)
+  tags.json           Taxonomy (domaines + etapes)
+  pipelines.json      Workflow templates (8 pipelines)
 ```
+
+## Data model
+
+Each software entry has:
+- **Domaines** — the field/medium (2D, 3D, Audio, Video, etc.)
+- **Etapes** — the production step (Modélisation, Animation, Compositing, etc.)
+- **Formats** — `import`, `export` (interchange), `build` (final outputs), `natif`
+- **Collaboration** — type + protocols (OSC, MIDI, NDI, Spout, etc.)
+
+Tags are organized in `tags.json` with two axes: `domaines` (11 categories) and `etapes` (6 phases).
 
 ## Features
 
-- **Table view** - filter software by licence, platform, and usage tags
-- **Network cartography** - 4 visualization modes:
-  - *Affinity* - software linked by shared usages (adjustable threshold)
-  - *Bipartite* - software-to-tag connections
-  - *Clusters* - grouped by primary category
-  - *Co-occurrence* - tag-to-tag relationships
-- **Light/dark theme** - persisted via localStorage
-- **Search** with auto-zoom to results
+- **Table view** — filter by licence, platform, domaines, and etapes
+- **Network cartography** — 4 visualization modes (affinity, bipartite, clusters, co-occurrence)
+- **Pipeline builder** — select a workflow, pick tools at each stage, see compatibility scores between them
+  - Compatibility = formats (50%) + platforms (30%) + protocols (20%)
+- **Light/dark theme**
+- **Search** with auto-zoom
 - **PNG export**
 
 ## Contributing
 
-The database lives in `bdd_soft.json`. Feel free to contribute by adding software or correcting entries.
+The database lives in `data/soft.json`. Taxonomy in `data/tags.json`. Workflows in `data/pipelines.json`.
 
 ***
 
