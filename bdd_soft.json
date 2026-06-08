@@ -307,6 +307,21 @@
         "url": "https://rawtherapee.com/"
       },
       {
+        "Nom": "RapidRaw",
+        "Usages": [
+            "2D", "Photo", "Image", "Bitmap", "IA"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://www.getrapidraw.com/"
+      },
+      {
         "Nom": "Processing",
         "Usages": [
             "Programmation", "Interaction", "Temps réel", "Automatisation", "2D"
