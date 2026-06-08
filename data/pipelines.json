@@ -74,7 +74,6 @@
     {
         "nom": "Vidéo / court-métrage live",
         "etapes": [
-            {"role": "Tournage", "tags": ["Vidéo"]},
             {"role": "Montage", "tags": ["Montage", "Vidéo"]},
             {"role": "Étalonnage", "tags": ["Compositing", "Vidéo"]},
             {"role": "Compositing / VFX", "tags": ["Compositing", "Animation"]},
