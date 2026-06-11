@@ -291,6 +291,21 @@
         "url": "https://www.autodesk.com/products/autocad/"
       },
       {
+        "Nom": "Adobe Lightroom",
+        "Usages": [
+            "2D", "Photo", "Image", "Bitmap"
+        ],
+        "Interface": "graphique",
+        "Description": "",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": ["avec 1To 14,62€/mois", "avec CC 23,99€/moi", "CCPro 78,65€/moi"],
+        "Typologie": "Logiciel local",
+        "url": "https://lightroom.adobe.com/"
+      },
+      {
         "Nom": "Raw therapee",
         "Usages": [
             "2D", "Photo", "Image", "Bitmap"
@@ -640,6 +655,20 @@
         "url": "https://www.autodesk.com/products/maya/"
       },
       {
+        "Nom": "SketchUp",
+        "Usages": [
+            "3D", "Modélisation", "Paramétrique", "CAD"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": ["GO 129$/an", "Pro 319,20$/an", "Studio 655,20$/an"],
+        "Typologie": "Logiciel local",
+        "url": "https://sketchup.trimble.com/fr"
+      },
+      {
         "Nom": "FreeCad",
         "Usages": [
             "3D", "Modélisation", "Paramétrique", "CAD"
@@ -813,6 +842,20 @@
         "Prix licence": "349,99€",
         "Typologie": "Logiciel local",
         "url": "https://www.apple.com/final-cut-pro/"
+      },
+      {
+        "Nom": "Ableton Live",
+        "Usages": [
+          "Son", "Musique", "MAO", "Temps réel"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS"
+        ],
+        "Prix licence": ["Live Intro 79€", "Live Standard 279€", "Live Suite 599€ ou 24,96€/mois"],
+        "Typologie": "Logiciel local",
+        "url": "https://www.ableton.com"
       },
       {
         "Nom": "Pro Tools",
