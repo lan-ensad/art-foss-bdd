@@ -1855,6 +1855,22 @@
         "Prix licence": "libre",
         "Typologie": "Logiciel local",
         "url":"http://firkafilm.com/about_f.html"
+      },
+      {
+        "Nom": "Bevy",
+        "Usages": [
+          "2D", "Moteur de rendu", "Jeux vidéo", "3D", "Temps réel", "Interaction"
+        ],
+        "Interface": "API",
+        "Description": "Moteur de jeu en Rust orienté données. En cours de développement",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Librairie Rust",
+        "url": "https://bevy.org/"
       }
     ]
   }
