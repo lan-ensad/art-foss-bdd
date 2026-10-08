@@ -122,6 +122,21 @@
         "Typologie": "Logiciel cloud",
         "url": "https://www.adobe.com/products/photoshop.html"
       },
+        {
+        "Nom": "PhotoCraft",
+        "Usages": [
+            "2D", "Bitmap", "Photo", "Image"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+          "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://getartcraft.com/apps/photocraft"
+      },
       {
         "Nom": "ImageMagick",
         "Usages": [
@@ -304,6 +319,22 @@
         "Prix licence": ["avec 1To 14,62€/mois", "avec CC 23,99€/moi", "CCPro 78,65€/moi"],
         "Typologie": "Logiciel local",
         "url": "https://lightroom.adobe.com/"
+      },
+        {
+        "Nom": "LightCraft",
+        "Usages": [
+            "2D", "Photo", "Image", "Bitmap"
+        ],
+        "Interface": "graphique",
+        "Description": "",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+            "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://getartcraft.com/apps/lightcraft"
       },
       {
         "Nom": "Raw therapee",
@@ -522,6 +553,21 @@
         "Prix licence": "26,21€/mois",
         "Typologie": "Logiciel local",
         "url": "https://www.adobe.com/products/indesign.html"
+      },
+        {
+        "Nom": "DesignCraft",
+        "Usages": [
+            "Publication", "Ecriture", "PAO", "Mock-up"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+            "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://getartcraft.com/apps/designcraft"
       },
       {
         "Nom": "Pandoc",
@@ -815,6 +861,21 @@
         "Typologie": "Logiciel cloud",
         "url": "https://www.adobe.com/products/premiere.html"
       },
+        {
+        "Nom": "FilmCraft",
+        "Usages": [
+          "Vidéo", "Compositing", "Montage"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+            "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://getartcraft.com/apps/filmcraft"
+      },
       {
         "Nom": "DaVinci Resolve",
         "Usages": [
@@ -929,6 +990,21 @@
         "Prix licence": "26,21€/mois",
         "Typologie": "Logiciel cloud",
         "url": "https://www.adobe.com/products/illustrator.html"
+      },
+        {
+        "Nom": "VectorCraft",
+        "Usages": [
+          "Vectoriel", "Image", "2D"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+            "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://getartcraft.com/apps/vectorcraft"
       },
       {
         "Nom": "Tiled",
@@ -1274,6 +1350,21 @@
         "Prix licence": "26,21 € / mois",
         "Typologie": "Logiciel local",
         "url": "https://www.adobe.com/fr/products/aftereffects.html"
+      },
+        {
+        "Nom": "EffectCraft",
+        "Usages": [
+            "Compositing", "Vidéo"
+        ],
+        "Interface": "graphique",
+        "Plateforme": [
+          "Windows",
+          "MacOS",
+            "Linux"
+        ],
+        "Prix licence": "libre",
+        "Typologie": "Logiciel local",
+        "url": "https://getartcraft.com/apps/effectcraft"
       },
       {
         "Nom": "Gyroflow",
